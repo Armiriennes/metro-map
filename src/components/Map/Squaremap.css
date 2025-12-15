@@ -1,3 +1,29 @@
 .leaflet-container {
     background-color: #020618;
 }
+
+.map-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mc-coords {
+    position: absolute;
+    top: 10px;
+    left: 60px;   /* 👈 décale après les boutons Leaflet */
+
+    width: 120px;
+    height: 60px;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+
+    font-family: monospace;
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 4px;
+
+    pointer-events: none;
+    z-index: 9999;
+}
