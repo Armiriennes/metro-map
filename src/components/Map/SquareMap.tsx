@@ -2,14 +2,14 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import './Squaremap.css';
 
 interface Props {
     tileSize?: number;
 }
 
-
 const TILE_RANGES: Record<number, { minX: number; maxX: number; minY: number; maxY: number }> = {
-    // min = -(2^(n+1)) | max = (2^(n+1))-1
+    // min = -(2^(n+1)) | max = ((2^(n+1))-1)
     0: { minX: -2, maxX: 1, minY: -2, maxY: 1 },
     1: { minX: -4, maxX: 3, minY: -4, maxY: 3 },
     2: { minX: -8, maxX: 7, minY: -8, maxY: 7 },
@@ -23,21 +23,20 @@ export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
     const maxRealZoom = 3;
     const maxLeafletZoom = 10;
 
-    // center 0-0
-    const bounds: [[number, number], [number, number]] = [
-        [TILE_RANGES[maxRealZoom].minY * tileSize, TILE_RANGES[maxRealZoom].minX * tileSize],
-        [TILE_RANGES[maxRealZoom].maxY * tileSize, TILE_RANGES[maxRealZoom].maxX * tileSize],
-    ];
+    // Calcul automatique du centre pour les 4 tuiles visibles du zoom 0
+    const zoom0 = TILE_RANGES[0];
+    const centerX = (zoom0.minX + zoom0.maxX + 1) / 2 * tileSize; // +1 pour inclure la tuile max
+    const centerY = (zoom0.minY + zoom0.maxY + 1) / 2 * tileSize;
 
     const urlTemplate = `${mapUrl}/tiles/${worldName}/{z}/{x}_{y}.png`;
 
     return (
         <MapContainer
             crs={L.CRS.Simple}
-            bounds={bounds}
+            center={[centerY, centerX]} // [lat, lng] = [Y, X]
+            zoom={maxRealZoom}          // zoom initial = niveau réel maximal
             minZoom={0}
             maxZoom={maxLeafletZoom}
-            zoom={maxRealZoom}
             style={{
                 width: '100vw',
                 height: '100vh',
