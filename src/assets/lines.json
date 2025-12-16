@@ -1,153 +1,501 @@
-  [
-    {
-      "id": 1,
-      "name": "M1",
-      "type": "Metro",
-      "nodes" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
-      "hex": "FFD000"
-    }, {
-      "id": 2,
-      "name": "M1 bis",
-      "type": "Metro",
-      "nodes" : [24,28,29,30,31,32,33,34],
-      "hex": "996A00"
-    }, {
-    "id": 3,
-    "name": "M2",
-    "type": "Metro",
-    "nodes" : [42,41,40,39,38,11,12,13,35,36,37],
-    "hex": "E80000"
-    }, {
-    "id": 4,
-    "name": "M3",
-    "type": "Metro",
-    "nodes" : [43,44,45,46,47,8,9,10,11,38,39,48,49,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70],
-    "hex": "00A80A"
-  }, {
-    "id": 5,
-    "name": "M3 bis",
-    "type": "Metro",
-    "nodes" : [71,65,72,73,74,75,70,76,77,78,79,80],
-    "hex": "00FF0C"
-  }, {
-    "id": 6,
-    "name": "M4",
-    "type": "Metro",
-    "nodes" : [13,81,82,83,17,84,85,86,88,89,90],
-    "hex": "8400FF"
-  }, {
-    "id": 7,
-    "name": "M5",
-    "type": "Metro",
-    "nodes" : [91,92,93,75,70,94,95,96,97,98,99,100,101,102],
-    "hex": "FF7700"
-  }, {
-    "id": 8,
-    "name": "M6",
-    "type": "Metro",
-    "nodes" : [103,104,105,106,13,107,108,37,109,110,111,112],
-    "hex": "000DFF"
-  }, {
-    "id": 9,
-    "name": "M7",
-    "type": "Metro",
-    "nodes" : [113,114,115,116,117,118,119,120,121,122,51,50,49,48,41,123,124,125,13,126,127,128,129],
-    "hex": "00CCFF"
-  }, {
-    "id": 10,
-    "name": "M8",
-    "type": "Metro",
-    "nodes" : [130,131,122,132,133,134,135,136,137,10,11,12,107,138,139,36,140,141,142,143,144,87,88,90],
-    "hex": "FB00FF"
-  }, {
-    "id": 11,
-    "name": "F1",
-    "type": "Funiculaire",
-    "nodes" : [43,145,146,147],
-    "hex": "FDBAFF"
-  }, {
-    "id": 12,
-    "name": "C1",
-    "type": "Telecabine",
-    "nodes" : [136,148],
-    "hex": "FDBAFF"
-  }, {
-    "id": 13,
-    "name": "C2",
-    "type": "Telecabine",
-    "nodes" : [149,150],
-    "hex": "FDBAFF"
-  }, {
-    "id": 14,
-    "name": "RER A",
-    "type": "RER",
-    "nodes" : [133,151,152,153,154],
-    "hex": "F0005D"
-  }, {
-    "id": 15,
-    "name": "LGV 1",
-    "type": "TGV",
-    "nodes" : [153,155,156,70],
-    "hex": "1A1A1A"
-  }, {
-    "id": 16,
-    "name": "LGV 1a",
-    "type": "TGV",
-    "nodes" : [156,102],
-    "hex": "1A1A1A"
-  }, {
-    "id": 17,
-    "name": "LGV 2",
-    "type": "TGV",
-    "nodes" : [70,157,158,159,160],
-    "hex": "1A1A1A"
-  }, {
-    "id": 18,
-    "name": "LGV 2a",
-    "type": "TGV",
-    "nodes" : [158,161],
-    "hex": "1A1A1A"
-  },{
-    "id": 19,
-    "name": "LGV 2b",
-    "type": "TGV",
-    "nodes" : [159,162,163,164],
-    "hex": "1A1A1A"
-  }, {
-    "id": 20,
-    "name": "LGV 3",
-    "type": "TGV",
-    "nodes" : [153,165,17,18],
-    "hex": "1A1A1A"
-  }, {
-    "id": 21,
-    "name": "LGV 4",
-    "type": "TGV",
-    "nodes" : [153,165,166,167,168],
-    "hex": "1A1A1A"
-  }, {
-    "id": 22,
-    "name": "LGV 4a",
-    "type": "TGV",
-    "nodes" : [166,90],
-    "hex": "1A1A1A"
-  },{
-    "id": 23,
-    "name": "LGV 4b",
-    "type": "TGV",
-    "nodes" : [167,169],
-    "hex": "1A1A1A"
-  }, {
-    "id": 24,
-    "name": "LGV 5",
-    "type": "TGV",
-    "nodes" : [153,170,1],
-    "hex": "1A1A1A"
-  }, {
-    "id": 25,
-    "name": "LGV 5a",
-    "type": "TGV",
-    "nodes" : [170,171,113],
-    "hex": "1A1A1A"
+[
+  {
+    "id":1,
+    "name":"M1",
+    "type":"Metro",
+    "nodes":[
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"FFD000"
+  },
+  {
+    "id":2,
+    "name":"M1 bis",
+    "type":"Metro",
+    "nodes":[
+      24,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"996A00"
+  },
+  {
+    "id":3,
+    "name":"M2",
+    "type":"Metro",
+    "nodes":[
+      42,
+      41,
+      40,
+      39,
+      38,
+      11,
+      12,
+      13,
+      35,
+      36,
+      37
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"E80000"
+  },
+  {
+    "id":4,
+    "name":"M3",
+    "type":"Metro",
+    "nodes":[
+      43,
+      44,
+      45,
+      46,
+      47,
+      8,
+      9,
+      10,
+      11,
+      38,
+      39,
+      48,
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"00A80A"
+  },
+  {
+    "id":5,
+    "name":"M3 bis",
+    "type":"Metro",
+    "nodes":[
+      71,
+      65,
+      72,
+      73,
+      74,
+      75,
+      70,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"00FF0C"
+  },
+  {
+    "id":6,
+    "name":"M4",
+    "type":"Metro",
+    "nodes":[
+      13,
+      81,
+      82,
+      83,
+      17,
+      84,
+      85,
+      86,
+      88,
+      89,
+      90
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"8400FF"
+  },
+  {
+    "id":7,
+    "name":"M5",
+    "type":"Metro",
+    "nodes":[
+      91,
+      92,
+      93,
+      75,
+      70,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"FF7700"
+  },
+  {
+    "id":8,
+    "name":"M6",
+    "type":"Metro",
+    "nodes":[
+      103,
+      104,
+      105,
+      106,
+      13,
+      107,
+      108,
+      37,
+      109,
+      110,
+      111,
+      112
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"000DFF"
+  },
+  {
+    "id":9,
+    "name":"M7",
+    "type":"Metro",
+    "nodes":[
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      51,
+      50,
+      49,
+      48,
+      41,
+      123,
+      124,
+      125,
+      13,
+      126,
+      127,
+      128,
+      129
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"00CCFF"
+  },
+  {
+    "id":10,
+    "name":"M8",
+    "type":"Metro",
+    "nodes":[
+      130,
+      131,
+      122,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      10,
+      11,
+      12,
+      107,
+      138,
+      139,
+      36,
+      140,
+      141,
+      142,
+      143,
+      144,
+      87,
+      88,
+      90
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"solid",
+    "hex":"FB00FF"
+  },
+  {
+    "id":11,
+    "name":"F1",
+    "type":"Funiculaire",
+    "nodes":[
+      43,
+      145,
+      146,
+      147
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"dashed",
+    "hex":"FDBAFF"
+  },
+  {
+    "id":12,
+    "name":"C1",
+    "type":"Telecabine",
+    "nodes":[
+      136,
+      148
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"dashed",
+    "hex":"FDBAFF"
+  },
+  {
+    "id":13,
+    "name":"C2",
+    "type":"Telecabine",
+    "nodes":[
+      149,
+      150
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"dashed",
+    "hex":"FDBAFF"
+  },
+  {
+    "id":14,
+    "name":"RER A",
+    "type":"RER",
+    "nodes":[
+      133,
+      151,
+      152,
+      153,
+      154
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"dotted",
+    "hex":"F0005D"
+  },
+  {
+    "id":15,
+    "name":"LGV 1",
+    "type":"TGV",
+    "nodes":[
+      153,
+      155,
+      156,
+      70
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":16,
+    "name":"LGV 1a",
+    "type":"TGV",
+    "nodes":[
+      156,
+      102
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":17,
+    "name":"LGV 2",
+    "type":"TGV",
+    "nodes":[
+      70,
+      157,
+      158,
+      159,
+      160
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":18,
+    "name":"LGV 2a",
+    "type":"TGV",
+    "nodes":[
+      158,
+      161
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":19,
+    "name":"LGV 2b",
+    "type":"TGV",
+    "nodes":[
+      159,
+      162,
+      163,
+      164
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":20,
+    "name":"LGV 3",
+    "type":"TGV",
+    "nodes":[
+      153,
+      165,
+      17,
+      18
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":21,
+    "name":"LGV 4",
+    "type":"TGV",
+    "nodes":[
+      153,
+      165,
+      166,
+      167,
+      168
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":22,
+    "name":"LGV 4a",
+    "type":"TGV",
+    "nodes":[
+      166,
+      90
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":23,
+    "name":"LGV 4b",
+    "type":"TGV",
+    "nodes":[
+      167,
+      169
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":24,
+    "name":"LGV 5",
+    "type":"TGV",
+    "nodes":[
+      153,
+      170,
+      1
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
+  },
+  {
+    "id":25,
+    "name":"LGV 5a",
+    "type":"TGV",
+    "nodes":[
+      170,
+      171,
+      113
+    ],
+    "thickness":3,
+    "visible":1,
+    "style":"dotted",
+    "hex":"1A1A1A"
   }
 ]
