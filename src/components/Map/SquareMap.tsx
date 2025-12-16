@@ -7,10 +7,10 @@ import type { Coords } from '../../interfaces/Coords';
 import linesData from '../../assets/lines.json';
 import './Squaremap.css';
 
-import { HUD_Coords } from './overlays/HUD_Coords.tsx';
-import { Stations } from './overlays/Station.tsx';
-import { Lines } from './overlays/Lines.tsx';
-import { MouseTracker } from "./overlays/MouseTracker.tsx";
+import { HUD_Coords } from './overlays/HUD_Coords';
+import { Stations } from './overlays/Station';
+import { Lines } from './overlays/Lines';
+import { MouseTracker } from './overlays/MouseTracker';
 
 export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
     const mapUrl = import.meta.env.VITE_MAP_URL!;
