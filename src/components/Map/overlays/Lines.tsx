@@ -29,7 +29,8 @@ export const Lines: React.FC<LinesProps> = ({ lines }) => {
         }
     });
 
-    const buildOffsetPositions = (line: Line, offsetScaleFactor = 0.01): [number, number][] => {
+    //Thank you Anima for the maths <3
+    const buildOffsetPositions = (line: Line, offsetScaleFactor = 0): [number, number][] => {
         const result: [number, number][] = [];
         for (let i = 0; i < line.nodes.length; i++) {
             const node = nodesData.find(n => n.id === line.nodes[i])!;
