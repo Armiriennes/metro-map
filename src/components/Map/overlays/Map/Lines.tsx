@@ -1,13 +1,9 @@
 import React from 'react';
 import { Polyline } from 'react-leaflet';
-import type { Line } from '../../../types/Line';
-import nodesData from '../../../assets/nodes.json';
-
-interface LinesProps {
-    lines: Line[];
-}
-
-const minecraftToLatLng = (x: number, z: number): [number, number] => [-z / 32, x / 32];
+import type { Line } from '../../../../types/Line.ts';
+import nodesData from '../../../../assets/json/nodes.json';
+import { CoordsConverter } from '../../../../utils/Coords_Converter.ts';
+import type {LinesProps} from "../../../../interfaces/Line_Props.ts";
 
 const getDashArray = (style?: string): string | undefined => {
     switch (style) {
@@ -34,7 +30,7 @@ export const Lines: React.FC<LinesProps> = ({ lines }) => {
         const result: [number, number][] = [];
         for (let i = 0; i < line.nodes.length; i++) {
             const node = nodesData.find(n => n.id === line.nodes[i])!;
-            const base = minecraftToLatLng(node.x, node.z);
+            const base = CoordsConverter.minecraftToLatLng(node.x, node.z);
 
             if (i === 0) {
                 result.push(base);

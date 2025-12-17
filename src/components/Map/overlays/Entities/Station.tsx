@@ -1,10 +1,8 @@
 import React from 'react';
 import { Marker, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
-import nodesData from '../../../assets/nodes.json';
-
-// Minecraft to Leaflet
-const minecraftToLatLng = (x: number, z: number): [number, number] => [-z / 32, x / 32];
+import nodesData from '../../../../assets/json/nodes.json';
+import { CoordsConverter } from '../../../../utils/Coords_Converter.ts';
 
 export const Stations: React.FC = () => {
     return (
@@ -14,7 +12,7 @@ export const Stations: React.FC = () => {
                 .map(node => (
                     <Marker
                         key={node.id}
-                        position={minecraftToLatLng(node.x, node.z)}
+                        position={CoordsConverter.minecraftToLatLng(node.x, node.z)}
                         icon={L.divIcon({
                             className: 'node-icon',
                             html: `<div style="

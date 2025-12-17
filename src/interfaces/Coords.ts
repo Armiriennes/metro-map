@@ -1,6 +1,6 @@
 export interface Coords {
-    x: number
-    z: number
-    chunkX: number
+    x: number,
+    z: number,
+    chunkX: number,
     chunkZ: number
 }

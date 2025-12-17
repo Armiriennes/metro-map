@@ -1,12 +1,8 @@
 import React from 'react';
-import type { Coords } from '../../../interfaces/Coords';
-import './HUD_Coords.css';
+import './HudCoords.css';
+import type {Hud_Props} from "../../../../interfaces/Hud_Props.ts";
 
-interface HUDProps {
-    coords: Coords;
-}
-
-export const HUD_Coords: React.FC<HUDProps> = ({ coords }) => {
+export const HudCoords: React.FC<Hud_Props> = ({ coords }) => {
     return (
         <div className="mc-coords">
             <div>X: {coords.x}</div>

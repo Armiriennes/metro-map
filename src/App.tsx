@@ -1,9 +1,9 @@
-import {SquareMap} from './components/Map/SquareMap.tsx'
+import {Squaremap} from './components/Map/Squaremap.tsx'
 
 function App() {
     return (
         <div className="map">
-            <SquareMap />
+            <Squaremap />
         </div>
     );
 }

@@ -4,16 +4,17 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Props } from '../../interfaces/Props';
 import type { Coords } from '../../interfaces/Coords';
-import linesData from '../../assets/lines.json';
+import linesData from '../../assets/json/lines.json';
 import './Squaremap.css';
 
-import { HUD_Coords } from './overlays/HUD_Coords';
-import { Stations } from './overlays/Station';
-import { Lines } from './overlays/Lines';
-import { MouseTracker } from './overlays/MouseTracker';
-import {Players} from "./overlays/Players.tsx";
+import { HudCoords } from './overlays/HUD/HudCoords.tsx';
+import { Stations } from './overlays/Entities/Station.tsx';
+import { Lines } from './overlays/Map/Lines.tsx';
+import { MouseTracker } from './overlays/MouseTracker.tsx';
+import {Players} from "./overlays/Entities/Players.tsx";
+import {MapBorder} from "./overlays/Map/WorldBorder.tsx";
 
-export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
+export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
     const mapUrl = import.meta.env.VITE_MAP_URL!;
     const worldName = import.meta.env.VITE_WORLD_MAP_NAME!;
     const maxRealZoom = 3;
@@ -22,7 +23,7 @@ export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
 
     return (
         <div className="map-wrapper">
-            {coords && <HUD_Coords coords={coords} />}
+            {coords && <HudCoords coords={coords} />}
             <MapContainer
                 crs={L.CRS.Simple}
                 center={[0, 0]}
