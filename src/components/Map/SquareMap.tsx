@@ -11,6 +11,7 @@ import { HUD_Coords } from './overlays/HUD_Coords';
 import { Stations } from './overlays/Station';
 import { Lines } from './overlays/Lines';
 import { MouseTracker } from './overlays/MouseTracker';
+import {Players} from "./overlays/Players.tsx";
 
 export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
     const mapUrl = import.meta.env.VITE_MAP_URL!;
@@ -41,6 +42,7 @@ export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
                 <MouseTracker setCoords={setCoords} />
                 <Stations />
                 <Lines lines={linesData} />
+                <Players />
             </MapContainer>
 
         </div>
