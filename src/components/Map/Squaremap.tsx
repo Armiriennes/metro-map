@@ -31,6 +31,7 @@ export const SquareMap: React.FC<Props> = ({ tileSize = 128 }) => {
                 maxZoom={maxLeafletZoom}
                 style={{ width: '100vw', height: '100vh', imageRendering: 'pixelated' }}
             >
+                <MapBorder />
                 <TileLayer
                     url={`${mapUrl}/tiles/${worldName}/{z}/{x}_{y}.png`}
                     tileSize={tileSize}
