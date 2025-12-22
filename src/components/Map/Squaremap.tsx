@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import {MapContainer, Pane, TileLayer} from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Props } from '../../interfaces/Props';
@@ -43,6 +43,8 @@ export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
 
                 <MouseTracker setCoords={setCoords} />
                 <Stations />
+                <Pane name="lines-base" style={{ zIndex: 400 }} />
+                <Pane name="lines-shared" style={{ zIndex: 450 }} />
                 <Lines lines={linesData} />
                 <Players />
             </MapContainer>
