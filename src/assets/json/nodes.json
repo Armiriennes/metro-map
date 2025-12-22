@@ -80,7 +80,11 @@
       4,
       10
     ],
-    "name":"Nationale"
+    "name":"Nationale",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      153
+    ]
   },
   {
     "id":11,
@@ -98,7 +102,11 @@
       3,
       10
     ],
-    "name":"Grand Place"
+    "name":"Grand Place",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      38
+    ]
   },
   {
     "id":13,
@@ -112,7 +120,11 @@
       8,
       9
     ],
-    "name":"Les Halles"
+    "name":"Les Halles",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      154
+    ]
   },
   {
     "id":14,
@@ -332,7 +344,11 @@
       3,
       4
     ],
-    "name":"Armire"
+    "name":"Armire",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      12
+    ]
   },
   {
     "id":39,
@@ -446,7 +462,11 @@
       4,
       9
     ],
-    "name":"Terrain"
+    "name":"Terrain",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      122
+    ]
   },
   {
     "id":52,
@@ -1011,7 +1031,11 @@
       9,
       10
     ],
-    "name":"Lac d'Io"
+    "name":"Lac d'Io",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      51
+    ]
   },
   {
     "id":123,
@@ -1219,7 +1243,11 @@
     "lines":[
       13
     ],
-    "name":"Chenoux"
+    "name":"Chenoux",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      161
+    ]
   },
   {
     "id":150,
@@ -1255,7 +1283,11 @@
       21,
       24
     ],
-    "name":"Nationale SNCA"
+    "name":"Nationale SNCA",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      10
+    ]
   },
   {
     "id":154,
@@ -1265,7 +1297,11 @@
     "lines":[
       14
     ],
-    "name":"Salle des Coffres"
+    "name":"Salle des Coffres",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      13
+    ]
   },
   {
     "id":155,
@@ -1315,7 +1351,11 @@
     "lines":[
       18
     ],
-    "name":"Chenoux - Gare"
+    "name":"Chenoux - Gare",
+    "isPedestrianLinked":1,
+    "PedestrianLinksToNode": [
+      149
+    ]
   },
   {
     "id":162,
