@@ -8,7 +8,7 @@
       1,
       24
     ],
-    "name":"Choisilanc"
+    "name":"Choisillanc - Gare"
   },
   {
     "id":2,
@@ -239,7 +239,7 @@
     "lines":[
       1
     ],
-    "name":"Plage"
+    "name":"Nelee - Plage"
   },
   {
     "id":28,
@@ -449,7 +449,8 @@
     "z":-130,
     "isStation":1,
     "lines":[
-      9
+      9,
+      14
     ],
     "name":"Usines"
   },
@@ -962,7 +963,8 @@
     "isStation":1,
     "lines":[
       9,
-      25
+      25,
+      26
     ],
     "name":"Redstone Park"
   },
@@ -1429,8 +1431,41 @@
   },
   {
     "id":171,
+    "x":-520,
+    "z":20,
+    "isStation":0
+  },
+  {
+    "id":172,
+    "x":-525,
+    "z":120,
+    "isStation":1,
+    "lines":[
+      1,
+      26
+    ],
+    "name":"Choisillanc - Mer"
+  },
+  {
+    "id":173,
     "x":-525,
     "z":20,
+    "isStation":1,
+    "lines":[
+      26
+    ],
+    "name":"Chapelle"
+  },
+  {
+    "id":174,
+    "x":-510,
+    "z":-110,
+    "isStation":0
+  },
+  {
+    "id":175,
+    "x":80,
+    "z":-130,
     "isStation":0
   }
 ]

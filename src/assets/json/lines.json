@@ -4,6 +4,7 @@
     "name":"M1",
     "type":"Metro",
     "nodes":[
+      172,
       1,
       2,
       3,
@@ -314,7 +315,7 @@
   },
   {
     "id":13,
-    "name":"C2",
+    "name":"C3",
     "type":"Telecabine",
     "nodes":[
       149,
@@ -497,5 +498,19 @@
     "visible":1,
     "style":"dotted",
     "hex":"1A1A1A"
+  },
+  {
+    "id":26,
+    "name":"C2",
+    "type":"Telecabine",
+    "nodes":[
+      113,
+      172,
+      173
+    ],
+    "thickness":5,
+    "visible":1,
+    "style":"dashed",
+    "hex":"FDBAFF"
   }
 ]
