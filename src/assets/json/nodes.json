@@ -1329,7 +1329,9 @@
     "id": 189,
     "x": 10,
     "z": 100,
-    "isStation": 0
+    "isStation": 1,
+    "name": "Carillon",
+    "lines": [28]
   },
   {
     "id": 190,
