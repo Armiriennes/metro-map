@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { Marker, Tooltip, useMapEvent } from 'react-leaflet';
+import React from 'react';
+import { Marker, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import nodesData from '../../../../assets/json/nodes.json';
 import { CoordsConverter } from '../../../../utils/Coords_Converter.ts';
-import './Station.css'
+import './Station.css';
 
-export const Stations: React.FC = () => {
-    const [openStationId, setOpenStationId] = useState<number | null>(null);
+interface StationsProps {
+    onSelectStation?: (station: any) => void;
+}
 
+export const Stations: React.FC<StationsProps> = ({ onSelectStation }) => {
+    // Si on clique sur la carte (hors d'un marqueur), on ferme la Sidebar
     useMapEvent('click', () => {
-        setOpenStationId(null);
+        if (onSelectStation) {
+            onSelectStation(null);
+        }
     });
 
     return (
@@ -27,11 +32,10 @@ export const Stations: React.FC = () => {
                                 background:white;
                                 border-radius:50%;
                                 border:2px solid black;
+                                cursor:pointer;
                             "></div>
                         `,
                     });
-
-                    const isOpen = openStationId === node.id;
 
                     return (
                         <Marker
@@ -41,22 +45,13 @@ export const Stations: React.FC = () => {
                             eventHandlers={{
                                 click: (e) => {
                                     e.originalEvent.stopPropagation();
-                                    setOpenStationId(isOpen ? null : node.id);
+                                    // Déclenche l'ouverture du panneau latéral avec les données de la station
+                                    if (onSelectStation) {
+                                        onSelectStation(node);
+                                    }
                                 },
                             }}
-                        >
-                            {isOpen && (
-                                <Tooltip
-                                    direction="top"
-                                    offset={[0, -10]}
-                                    opacity={1}
-                                    permanent
-                                    className={`tooltip-fade ${isOpen ? 'show' : ''}`}
-                                >
-                                    {node.name}
-                                </Tooltip>
-                            )}
-                        </Marker>
+                        />
                     );
                 })}
         </>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {MapContainer, Pane, TileLayer} from 'react-leaflet';
+import { MapContainer, Pane, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Props } from '../../interfaces/Props';
@@ -11,8 +11,9 @@ import { HudCoords } from './overlays/HUD/HudCoords.tsx';
 import { Stations } from './overlays/Entities/Station.tsx';
 import { Lines } from './overlays/Map/Lines.tsx';
 import { MouseTracker } from './overlays/MouseTracker.tsx';
-import { Players } from "./overlays/Entities/Players.tsx";
+// import { Players } from "./overlays/Entities/Players.tsx";
 import { MapBorder } from "./overlays/Map/WorldBorder.tsx";
+import { Sidebar } from './overlays/HUD/Sidebar.tsx';
 
 export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
     const mapUrl = import.meta.env.VITE_MAP_URL;
@@ -21,8 +22,11 @@ export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
     const maxLeafletZoom = 10;
     const [coords, setCoords] = useState<Coords | null>(null);
 
+    // État pour stocker la station sélectionnée
+    const [selectedStation, setSelectedStation] = useState<any | null>(null);
+
     return (
-        <div className="map-wrapper">
+        <div className="map-wrapper" style={{ position: 'relative', width: '100vw', height: '100vh', display: 'flex' }}>
             {coords && <HudCoords coords={coords} />}
             <MapContainer
                 crs={L.CRS.Simple}
@@ -42,13 +46,20 @@ export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
                 />
 
                 <MouseTracker setCoords={setCoords} />
-                <Stations />
+                <Stations onSelectStation={(station) => setSelectedStation(station)} />
                 <Pane name="lines-base" style={{ zIndex: 400 }} />
                 <Pane name="lines-shared" style={{ zIndex: 450 }} />
                 <Lines lines={linesData} />
-                <Players />
+                {/*<Players />*/}
             </MapContainer>
 
+            {/* Panneau latéral qui s'affiche en plus quand une station est cliquée */}
+            {selectedStation && (
+                <Sidebar
+                    station={selectedStation}
+                    onClose={() => setSelectedStation(null)}
+                />
+            )}
         </div>
     );
 };
