@@ -12,7 +12,7 @@ const getDashArray = (style ? : string): string | undefined => {
         case 'dashed':
             return '10 6';
         case 'dotted':
-            return '2 6';
+            return '2 9';
         default:
             return undefined;
     }

@@ -1,1471 +1,1404 @@
 [
   {
-    "id":1,
-    "x":-460,
-    "z":120,
-    "isStation":1,
-    "lines":[
-      1,
-      24
-    ],
-    "name":"Choisillanc - Gare"
-  },
-  {
-    "id":2,
-    "x":-425,
-    "z":120,
-    "isStation":0
-  },
-  {
-    "id":3,
-    "x":-370,
-    "z":175,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Col du Géant"
-  },
-  {
-    "id":4,
-    "x":-185,
-    "z":175,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Saint - Orgustrin"
-  },
-  {
-    "id":5,
-    "x":-110,
-    "z":175,
-    "isStation":0
-  },
-  {
-    "id":6,
-    "x":-60,
-    "z":125,
-    "isStation":0
-  },
-  {
-    "id":7,
-    "x":-60,
-    "z":75,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Bois de Buzet"
-  },
-  {
-    "id":8,
-    "x":-60,
-    "z":50,
-    "isStation":0
-  },
-  {
-    "id":9,
-    "x":-50,
-    "z":40,
-    "isStation":0
-  },
-  {
-    "id":10,
-    "x":-20,
-    "z":40,
-    "isStation":1,
-    "lines":[
-      1,
-      4,
-      10
-    ],
-    "name":"Nationale",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      153
-    ]
-  },
-  {
-    "id":11,
-    "x":20,
-    "z":40,
-    "isStation":0
-  },
-  {
-    "id":12,
-    "x":50,
-    "z":40,
-    "isStation":1,
-    "lines":[
-      1,
-      3,
-      10
-    ],
-    "name":"Grand Place",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      38
-    ]
-  },
-  {
-    "id":13,
-    "x":140,
-    "z":40,
-    "isStation":1,
-    "lines":[
-      1,
-      3,
-      6,
-      8,
-      9
-    ],
-    "name":"Les Halles",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      154
-    ]
-  },
-  {
-    "id":14,
-    "x":240,
-    "z":40,
-    "isStation":0
-  },
-  {
-    "id":15,
-    "x":270,
-    "z":70,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Lac d'Auber"
-  },
-  {
-    "id":16,
-    "x":270,
-    "z":90,
-    "isStation":0
-  },
-  {
-    "id":17,
-    "x":320,
-    "z":140,
-    "isStation":1,
-    "lines":[
-      1,
-      20
-    ],
-    "name":"Patinoire"
-  },
-  {
-    "id":18,
-    "x":630,
-    "z":140,
-    "isStation":1,
-    "lines":[
-      1,
-      20
-    ],
-    "name":"Apple Town - Gare"
-  },
-  {
-    "id":19,
-    "x":660,
-    "z":170,
-    "isStation":0
-  },
-  {
-    "id":20,
-    "x":720,
-    "z":170,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Apple Town - Centre"
-  },
-  {
-    "id":21,
-    "x":780,
-    "z":110,
-    "isStation":0
-  },
-  {
-    "id":22,
-    "x":780,
-    "z":60,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Équestria"
-  },
-  {
-    "id":23,
-    "x":780,
-    "z":10,
-    "isStation":0
-  },
-  {
-    "id":24,
-    "x":820,
-    "z":-30,
-    "isStation":1,
-    "lines":[
-      1,
-      2
-    ],
-    "name":"Cerisiers"
-  },
-  {
-    "id":25,
-    "x":820,
-    "z":-140,
-    "isStation":0
-  },
-  {
-    "id":26,
-    "x":900,
-    "z":-220,
-    "isStation":0
-  },
-  {
-    "id":27,
-    "x":1000,
-    "z":-220,
-    "isStation":1,
-    "lines":[
-      1
-    ],
-    "name":"Nelee - Plage"
-  },
-  {
-    "id":28,
-    "x":945,
-    "z":-30,
-    "isStation":0
-  },
-  {
-    "id":29,
-    "x":975,
-    "z":0,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Souterrains - Entrée"
-  },
-  {
-    "id":30,
-    "x":1030,
-    "z":0,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Surface"
-  },
-  {
-    "id":31,
-    "x":1060,
-    "z":0,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Falaises"
-  },
-  {
-    "id":32,
-    "x":1070,
-    "z":10,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Colonnes"
-  },
-  {
-    "id":33,
-    "x":1060,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Sans Nom"
-  },
-  {
-    "id":34,
-    "x":1040,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      2
-    ],
-    "name":"Sans Nom"
-  },
-  {
-    "id":35,
-    "x":140,
-    "z":95,
-    "isStation":0
-  },
-  {
-    "id":36,
-    "x":75,
-    "z":160,
-    "isStation":1,
-    "lines":[
-      3,
-      10
-    ],
-    "name":"Donjon"
-  },
-  {
-    "id":37,
-    "x":10,
-    "z":160,
-    "isStation":1,
-    "lines":[
-      3,
-      8
-    ],
-    "name":"Château"
-  },
-  {
-    "id":38,
-    "x":20,
-    "z":10,
-    "isStation":1,
-    "lines":[
-      3,
-      4
-    ],
-    "name":"Armire",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      12
-    ]
-  },
-  {
-    "id":39,
-    "x":20,
-    "z":-50,
-    "isStation":1,
-    "lines":[
-      3,
-      4
-    ],
-    "name":"Pêche"
-  },
-  {
-    "id":40,
-    "x":30,
-    "z":-50,
-    "isStation":0
-  },
-  {
-    "id":41,
-    "x":70,
-    "z":-90,
-    "isStation":1,
-    "lines":[
-      3,
-      9
-    ],
-    "name":"Porte Moutons"
-  },
-  {
-    "id":42,
-    "x":70,
-    "z":-160,
-    "isStation":1,
-    "lines":[
-      3
-    ],
-    "name":"Cap"
-  },
-  {
-    "id":43,
-    "x":-390,
-    "z":70,
-    "isStation":1,
-    "lines":[
-      4,
-      11
-    ],
-    "name":"Névés"
-  },
-  {
-    "id":44,
-    "x":-365,
-    "z":95,
-    "isStation":0
-  },
-  {
-    "id":45,
-    "x":-300,
-    "z":95,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Cirque"
-  },
-  {
-    "id":46,
-    "x":-225,
-    "z":95,
-    "isStation":0
-  },
-  {
-    "id":47,
-    "x":-180,
-    "z":50,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Champs"
-  },
-  {
-    "id":48,
-    "x":20,
-    "z":-90,
-    "isStation":0
-  },
-  {
-    "id":49,
-    "x":20,
-    "z":-130,
-    "isStation":0
-  },
-  {
-    "id":50,
-    "x":-5,
-    "z":-130,
-    "isStation":1,
-    "lines":[
-      9,
-      14
-    ],
-    "name":"Usines"
-  },
-  {
-    "id":51,
-    "x":-110,
-    "z":-130,
-    "isStation":1,
-    "lines":[
-      4,
-      9
-    ],
-    "name":"Terrain",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      122
-    ]
-  },
-  {
-    "id":52,
-    "x":-110,
-    "z":-200,
-    "isStation":0
-  },
-  {
-    "id":53,
-    "x":-130,
-    "z":-220,
-    "isStation":0
-  },
-  {
-    "id":54,
-    "x":-130,
-    "z":-280,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Renifleurs"
-  },
-  {
-    "id":55,
-    "x":-130,
-    "z":-555,
-    "isStation":0
-  },
-  {
-    "id":56,
-    "x":-180,
-    "z":-555,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Jungle"
-  },
-  {
-    "id":57,
-    "x":-275,
-    "z":-555,
-    "isStation":0
-  },
-  {
-    "id":58,
-    "x":-275,
-    "z":-590,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Canal"
-  },
-  {
-    "id":59,
-    "x":-275,
-    "z":-625,
-    "isStation":0
-  },
-  {
-    "id":60,
-    "x":-375,
-    "z":-625,
-    "isStation":0
-  },
-  {
-    "id":61,
-    "x":-440,
-    "z":-690,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Le Pertuix"
-  },
-  {
-    "id":62,
-    "x":-515,
-    "z":-690,
-    "isStation":0
-  },
-  {
-    "id":63,
-    "x":-555,
-    "z":-730,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Tir à l'Arc"
-  },
-  {
-    "id":64,
-    "x":-590,
-    "z":-765,
-    "isStation":0
-  },
-  {
-    "id":65,
-    "x":-590,
-    "z":-885,
-    "isStation":1,
-    "lines":[
-      4,
-      5
-    ],
-    "name":"Moulins"
-  },
-  {
-    "id":66,
-    "x":-700,
-    "z":-885,
-    "isStation":0
-  },
-  {
-    "id":67,
-    "x":-700,
-    "z":-970,
-    "isStation":1,
-    "lines":[
-      4
-    ],
-    "name":"Basilique"
-  },
-  {
-    "id":68,
-    "x":-675,
-    "z":-995,
-    "isStation":0
-  },
-  {
-    "id":69,
-    "x":-675,
-    "z":-1120,
-    "isStation":0
-  },
-  {
-    "id":70,
-    "x":-580,
-    "z":-1120,
-    "isStation":1,
-    "lines":[
-      4,
-      5,
-      7,
-      15,
-      17
-    ],
-    "name":"Le Mas d'Herdix"
-  },
-  {
-    "id":71,
-    "x":-490,
-    "z":-885,
-    "isStation":1,
-    "lines":[
-      5
-    ],
-    "name":"Écuries du Mas d'Herdix"
-  },
-  {
-    "id":72,
-    "x":-590,
-    "z":-905,
-    "isStation":0
-  },
-  {
-    "id":73,
-    "x":-610,
-    "z":-925,
-    "isStation":0
-  },
-  {
-    "id":74,
-    "x":-610,
-    "z":-1040,
-    "isStation":1,
-    "lines":[
-      5
-    ],
-    "name":"Fleuve"
-  },
-  {
-    "id":75,
-    "x":-610,
-    "z":-1090,
-    "isStation":0
-  },
-  {
-    "id":76,
-    "x":-580,
-    "z":-1140,
-    "isStation":0
-  },
-  {
-    "id":77,
-    "x":-560,
-    "z":-1160,
-    "isStation":1,
-    "lines":[
-      5
-    ],
-    "name":"Tour"
-  },
-  {
-    "id":78,
-    "x":-560,
-    "z":-1240,
-    "isStation":0
-  },
-  {
-    "id":79,
-    "x":-625,
-    "z":-1305,
-    "isStation":0
-  },
-  {
-    "id":80,
-    "x":-625,
-    "z":-1370,
-    "isStation":1,
-    "lines":[
-      5
-    ],
-    "name":"Grand Canal"
-  },
-  {
-    "id":81,
-    "x":180,
-    "z":80,
-    "isStation":0
-  },
-  {
-    "id":82,
-    "x":180,
-    "z":95,
-    "isStation":0
-  },
-  {
-    "id":83,
-    "x":225,
-    "z":140,
-    "isStation":1,
-    "lines":[
-      6
-    ],
-    "name":"Coteaux"
-  },
-  {
-    "id":84,
-    "x":390,
-    "z":140,
-    "isStation":0
-  },
-  {
-    "id":85,
-    "x":390,
-    "z":405,
-    "isStation":0
-  },
-  {
-    "id":86,
-    "x":280,
-    "z":405,
-    "isStation":0
-  },
-  {
-    "id":87,
-    "x":260,
-    "z":400,
-    "isStation":1,
-    "lines":[
-      10
-    ],
-    "name":"Corbère - Coupole"
-  },
-  {
-    "id":88,
-    "x":280,
-    "z":420,
-    "isStation":0
-  },
-  {
-    "id":89,
-    "x":280,
-    "z":460,
-    "isStation":1,
-    "lines":[
-      6
-    ],
-    "name":"Corbère - Grand Rue"
-  },
-  {
-    "id":90,
-    "x":280,
-    "z":515,
-    "isStation":1,
-    "lines":[
-      6,
-      10,
-      22
-    ],
-    "name":"Corbère - Gare"
-  },
-  {
-    "id":91,
-    "x":-810,
-    "z":-1075,
-    "isStation":1,
-    "lines":[
-      7
-    ],
-    "name":"Pla du Temple"
-  },
-  {
-    "id":92,
-    "x":-645,
-    "z":-1075,
-    "isStation":1,
-    "lines":[
-      7
-    ],
-    "name":"Grand Huit"
-  },
-  {
-    "id":93,
-    "x":-625,
-    "z":-1075,
-    "isStation":0
-  },
-  {
-    "id":94,
-    "x":-560,
-    "z":-1140,
-    "isStation":0
-  },
-  {
-    "id":95,
-    "x":-465,
-    "z":-1140,
-    "isStation":0
-  },
-  {
-    "id":96,
-    "x":-465,
-    "z":-1190,
-    "isStation":1,
-    "lines":[
-      7
-    ],
-    "name":"Jupe"
-  },
-  {
-    "id":97,
-    "x":-465,
-    "z":-1235,
-    "isStation":0
-  },
-  {
-    "id":98,
-    "x":-395,
-    "z":-1235,
-    "isStation":1,
-    "lines":[
-      7
-    ],
-    "name":"Abeilles"
-  },
-  {
-    "id":99,
-    "x":-370,
-    "z":-1235,
-    "isStation":0
-  },
-  {
-    "id":100,
-    "x":-370,
-    "z":-1580,
-    "isStation":1,
-    "lines":[
-      7
-    ],
-    "name":"Meadow Village"
-  },
-  {
-    "id":101,
-    "x":-370,
-    "z":-1640,
-    "isStation":0
-  },
-  {
-    "id":102,
-    "x":-110,
-    "z":-1640,
-    "isStation":1,
-    "lines":[
-      7,
-      16
-    ],
-    "name":"Stronghold"
-  },
-  {
-    "id":103,
-    "x":220,
-    "z":-140,
-    "isStation":1,
-    "lines":[
-      8
-    ],
-    "name":"(Syl)Phare - DàC"
-  },
-  {
-    "id":104,
-    "x":220,
-    "z":-30,
-    "isStation":1,
-    "lines":[
-      8
-    ],
-    "name":"Lamas"
-  },
-  {
-    "id":105,
-    "x":220,
-    "z":5,
-    "isStation":0
-  },
-  {
-    "id":106,
-    "x":140,
-    "z":5,
-    "isStation":0
-  },
-  {
-    "id":107,
-    "x":95,
-    "z":85,
-    "isStation":1,
-    "lines":[
-      8,
-      10
-    ],
-    "name":"Place du Piémont"
-  },
-  {
-    "id":108,
-    "x":10,
-    "z":85,
-    "isStation":0
-  },
-  {
-    "id":109,
-    "x":10,
-    "z":180,
-    "isStation":0
-  },
-  {
-    "id":110,
-    "x":45,
-    "z":215,
-    "isStation":1,
-    "lines":[
-      8
-    ],
-    "name":"Vignobles"
-  },
-  {
-    "id":111,
-    "x":45,
-    "z":320,
-    "isStation":1,
-    "lines":[
-      8
-    ],
-    "name":"Parc de Bozouls"
-  },
-  {
-    "id":112,
-    "x":45,
-    "z":375,
-    "isStation":1,
-    "lines":[
-      8
-    ],
-    "name":"Labyrinthe - Entrée"
-  },
-  {
-    "id":113,
-    "x":-525,
-    "z":-125,
-    "isStation":1,
-    "lines":[
-      9,
-      25,
-      26
-    ],
-    "name":"Redstone Park"
-  },
-  {
-    "id":114,
-    "x":-420,
-    "z":-125,
-    "isStation":0
-  },
-  {
-    "id":115,
-    "x":-420,
-    "z":-30,
-    "isStation":0
-  },
-  {
-    "id":116,
-    "x":-380,
-    "z":-30,
-    "isStation":1,
-    "lines":[
-      9
-    ],
-    "name":"Barrage"
-  },
-  {
-    "id":117,
-    "x":-300,
-    "z":-30,
-    "isStation":0
-  },
-  {
-    "id":118,
-    "x":-300,
-    "z":-60,
-    "isStation":0
-  },
-  {
-    "id":119,
-    "x":-270,
-    "z":-60,
-    "isStation":1,
-    "lines":[
-      9
-    ],
-    "name":"Falaise"
-  },
-  {
-    "id":120,
-    "x":-190,
-    "z":-60,
-    "isStation":0
-  },
-  {
-    "id":121,
-    "x":-190,
-    "z":-130,
-    "isStation":0
-  },
-  {
-    "id":122,
-    "x":-150,
-    "z":-130,
-    "isStation":1,
-    "lines":[
-      9,
-      10
-    ],
-    "name":"Lac d'Io",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      51
-    ]
-  },
-  {
-    "id":123,
-    "x":120,
-    "z":-90,
-    "isStation":0
-  },
-  {
-    "id":124,
-    "x":120,
-    "z":-50,
-    "isStation":1,
-    "lines":[
-      9
-    ],
-    "name":"Cocotier"
-  },
-  {
-    "id":125,
-    "x":120,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":126,
-    "x":160,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":127,
-    "x":230,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      9
-    ],
-    "name":"Écuries"
-  },
-  {
-    "id":128,
-    "x":315,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":129,
-    "x":315,
-    "z":-20,
-    "isStation":1,
-    "lines":[
-      9
-    ],
-    "name":"Diana"
-  },
-  {
-    "id":130,
-    "x":-180,
-    "z":-245,
-    "isStation":1,
-    "lines":[
-      10
-    ],
-    "name":"Échiquier"
-  },
-  {
-    "id":131,
-    "x":-180,
-    "z":-160,
-    "isStation":0
-  },
-  {
-    "id":132,
-    "x":-150,
-    "z":-75,
-    "isStation":0
-  },
-  {
-    "id":133,
-    "x":-120,
-    "z":-75,
-    "isStation":1,
-    "lines":[
-      10,
-      14
-    ],
-    "name":"Spawners"
-  },
-  {
-    "id":134,
-    "x":-40,
-    "z":-75,
-    "isStation":0
-  },
-  {
-    "id":135,
-    "x":-40,
-    "z":-60,
-    "isStation":1,
-    "lines":[
-      10
-    ],
-    "name":"Amphithéâtre"
-  },
-  {
-    "id":136,
-    "x":-40,
-    "z":-5,
-    "isStation":1,
-    "lines":[
-      10,
-      12
-    ],
-    "name":"Arcouzan"
-  },
-  {
-    "id":137,
-    "x":-40,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":138,
-    "x":95,
-    "z":125,
-    "isStation":0
-  },
-  {
-    "id":139,
-    "x":75,
-    "z":145,
-    "isStation":0
-  },
-  {
-    "id":140,
-    "x":75,
-    "z":180,
-    "isStation":0
-  },
-  {
-    "id":141,
-    "x":165,
-    "z":270,
-    "isStation":0
-  },
-  {
-    "id":142,
-    "x":165,
-    "z":320,
-    "isStation":0
-  },
-  {
-    "id":143,
-    "x":255,
-    "z":320,
-    "isStation":1,
-    "lines":[
-      10
-    ],
-    "name":"Niaux"
-  },
-  {
-    "id":144,
-    "x":260,
-    "z":320,
-    "isStation":0
-  },
-  {
-    "id":145,
-    "x":-380,
-    "z":60,
-    "isStation":0
-  },
-  {
-    "id":146,
-    "x":-380,
-    "z":40,
-    "isStation":0
-  },
-  {
-    "id":147,
-    "x":-400,
-    "z":40,
-    "isStation":1,
-    "lines":[
-      11
-    ],
-    "name":"Observatoire"
-  },
-  {
-    "id":148,
-    "x":-125,
-    "z":-5,
-    "isStation":1,
-    "lines":[
-      12
-    ],
-    "name":"Refuge Thiriet"
-  },
-  {
-    "id":149,
-    "x":-830,
-    "z":-2085,
-    "isStation":1,
-    "lines":[
-      13
-    ],
-    "name":"Chenoux",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      161
-    ]
-  },
-  {
-    "id":150,
-    "x":-690,
-    "z":-2085,
-    "isStation":1,
-    "lines":[
-      13
-    ],
-    "name":"Chenoux 2000"
-  },
-  {
-    "id":151,
-    "x":-120,
-    "z":-30,
-    "isStation":0
-  },
-  {
-    "id":152,
-    "x":-90,
-    "z":0,
-    "isStation":0
-  },
-  {
-    "id":153,
-    "x":-70,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      14,
-      15,
-      20,
-      21,
-      24
-    ],
-    "name":"Nationale SNCA",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      10
-    ]
-  },
-  {
-    "id":154,
-    "x":80,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      14
-    ],
-    "name":"Salle des Coffres",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      13
-    ]
-  },
-  {
-    "id":155,
-    "x":-70,
-    "z":-1120,
-    "isStation":0
-  },
-  {
-    "id":156,
-    "x":-110,
-    "z":-1120,
-    "isStation":0
-  },
-  {
-    "id":157,
-    "x":-900,
-    "z":-1120,
-    "isStation":0
-  },
-  {
-    "id":158,
-    "x":-900,
-    "z":-1790,
-    "isStation":0
-  },
-  {
-    "id":159,
-    "x":-2675,
-    "z":-1790,
-    "isStation":0
-  },
-  {
-    "id":160,
-    "x":-2675,
-    "z":-3100,
-    "isStation":1,
-    "lines":[
-      17
-    ],
-    "name":"Hercules Village"
-  },
-  {
-    "id":161,
-    "x":-900,
-    "z":-2040,
-    "isStation":1,
-    "lines":[
-      18
-    ],
-    "name":"Chenoux - Gare",
-    "isPedestrianLinked":1,
-    "PedestrianLinksToNode": [
-      149
-    ]
-  },
-  {
-    "id":162,
-    "x":-4155,
-    "z":-1790,
-    "isStation":0
-  },
-  {
-    "id":163,
-    "x":-4155,
-    "z":130,
-    "isStation":1,
-    "lines":[
-      19
-    ],
-    "name":"Désert"
-  },
-  {
-    "id":164,
-    "x":-4155,
-    "z":685,
-    "isStation":1,
-    "lines":[
-      19
-    ],
-    "name":"Mesa"
-  },
-  {
-    "id":165,
-    "x":-70,
-    "z":140,
-    "isStation":0
-  },
-  {
-    "id":166,
-    "x":-70,
-    "z":515,
-    "isStation":0
-  },
-  {
-    "id":167,
-    "x":-70,
-    "z":1330,
-    "isStation":0
-  },
-  {
-    "id":168,
-    "x":-70,
-    "z":2700,
-    "isStation":1,
-    "lines":[
-      21
-    ],
-    "name":"Océan Sud - Flyme Village"
-  },
-  {
-    "id":169,
-    "x":-275,
-    "z":1330,
-    "isStation":1,
-    "lines":[
-      23
-    ],
-    "name":"Diefda Town"
-  },
-  {
-    "id":170,
-    "x":-460,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":171,
-    "x":-520,
-    "z":20,
-    "isStation":0
-  },
-  {
-    "id":172,
-    "x":-525,
-    "z":120,
-    "isStation":1,
-    "lines":[
-      1,
-      26
-    ],
-    "name":"Choisillanc - Mer"
-  },
-  {
-    "id":173,
-    "x":-525,
-    "z":20,
-    "isStation":1,
-    "lines":[
-      26
-    ],
-    "name":"Chapelle"
-  },
-  {
-    "id":174,
-    "x":-510,
-    "z":-110,
-    "isStation":0
-  },
-  {
-    "id":175,
-    "x":80,
-    "z":-130,
-    "isStation":0
+    "id": 1,
+    "x": -460,
+    "z": 120,
+    "isStation": 1,
+    "name": "Choisilanc - Gare",
+    "lines": [1, 24]
+  },
+  {
+    "id": 2,
+    "x": -425,
+    "z": 120,
+    "isStation": 0
+  },
+  {
+    "id": 3,
+    "x": -370,
+    "z": 175,
+    "isStation": 1,
+    "name": "Col du Géant",
+    "lines": [1]
+  },
+  {
+    "id": 4,
+    "x": -185,
+    "z": 175,
+    "isStation": 1,
+    "name": "Saint - Orgustrain",
+    "lines": [1, 28]
+  },
+  {
+    "id": 5,
+    "x": -110,
+    "z": 175,
+    "isStation": 0
+  },
+  {
+    "id": 6,
+    "x": -60,
+    "z": 125,
+    "isStation": 0
+  },
+  {
+    "id": 7,
+    "x": -60,
+    "z": 75,
+    "isStation": 1,
+    "name": "Bois de Buzet",
+    "lines": [1]
+  },
+  {
+    "id": 8,
+    "x": -60,
+    "z": 50,
+    "isStation": 0
+  },
+  {
+    "id": 9,
+    "x": -50,
+    "z": 40,
+    "isStation": 0
+  },
+  {
+    "id": 10,
+    "x": -20,
+    "z": 40,
+    "isStation": 1,
+    "name": "Nationale",
+    "lines": [1, 4, 10],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 153
+  },
+  {
+    "id": 11,
+    "x": 20,
+    "z": 40,
+    "isStation": 0
+  },
+  {
+    "id": 12,
+    "x": 50,
+    "z": 40,
+    "isStation": 1,
+    "name": "Grand Place",
+    "lines": [1, 3, 10, 28],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 38
+  },
+  {
+    "id": 13,
+    "x": 140,
+    "z": 40,
+    "isStation": 1,
+    "name": "Les Halles",
+    "lines": [1, 3, 6, 8, 9, 28, 14, 29]
+  },
+  {
+    "id": 14,
+    "x": 240,
+    "z": 40,
+    "isStation": 0
+  },
+  {
+    "id": 15,
+    "x": 270,
+    "z": 70,
+    "isStation": 1,
+    "name": "Lac d'Auber",
+    "lines": [1]
+  },
+  {
+    "id": 16,
+    "x": 270,
+    "z": 90,
+    "isStation": 0
+  },
+  {
+    "id": 17,
+    "x": 320,
+    "z": 140,
+    "isStation": 1,
+    "name": "Patinoire",
+    "lines": [1, 6, 20]
+  },
+  {
+    "id": 18,
+    "x": 630,
+    "z": 140,
+    "isStation": 1,
+    "name": "Apple Town - Gare",
+    "lines": [1, 20]
+  },
+  {
+    "id": 19,
+    "x": 660,
+    "z": 170,
+    "isStation": 0
+  },
+  {
+    "id": 20,
+    "x": 720,
+    "z": 170,
+    "isStation": 1,
+    "name": "Apple Town - Centre",
+    "lines": [1]
+  },
+  {
+    "id": 21,
+    "x": 780,
+    "z": 110,
+    "isStation": 0
+  },
+  {
+    "id": 22,
+    "x": 780,
+    "z": 60,
+    "isStation": 1,
+    "name": "Équestria",
+    "lines": [1]
+  },
+  {
+    "id": 23,
+    "x": 780,
+    "z": 10,
+    "isStation": 0
+  },
+  {
+    "id": 24,
+    "x": 820,
+    "z": -30,
+    "isStation": 1,
+    "name": "Cerisiers",
+    "lines": [1, 2]
+  },
+  {
+    "id": 25,
+    "x": 820,
+    "z": -140,
+    "isStation": 0
+  },
+  {
+    "id": 26,
+    "x": 900,
+    "z": -220,
+    "isStation": 0
+  },
+  {
+    "id": 27,
+    "x": 1000,
+    "z": -220,
+    "isStation": 1,
+    "name": "Nelee - Plage",
+    "lines": [1]
+  },
+  {
+    "id": 28,
+    "x": 945,
+    "z": -30,
+    "isStation": 0
+  },
+  {
+    "id": 29,
+    "x": 975,
+    "z": 0,
+    "isStation": 1,
+    "name": "Souterrains - Entrée",
+    "lines": [2]
+  },
+  {
+    "id": 30,
+    "x": 1030,
+    "z": 0,
+    "isStation": 1,
+    "name": "Surface",
+    "lines": [2]
+  },
+  {
+    "id": 31,
+    "x": 1060,
+    "z": 0,
+    "isStation": 1,
+    "name": "Falaises",
+    "lines": [2]
+  },
+  {
+    "id": 32,
+    "x": 1070,
+    "z": 10,
+    "isStation": 1,
+    "name": "Colonnes",
+    "lines": [2]
+  },
+  {
+    "id": 33,
+    "x": 1060,
+    "z": 20,
+    "isStation": 1,
+    "name": "Sans Nom",
+    "lines": [2]
+  },
+  {
+    "id": 34,
+    "x": 1040,
+    "z": 20,
+    "isStation": 1,
+    "name": "Sans Nom",
+    "lines": [2]
+  },
+  {
+    "id": 35,
+    "x": 140,
+    "z": 95,
+    "isStation": 0
+  },
+  {
+    "id": 36,
+    "x": 75,
+    "z": 160,
+    "isStation": 1,
+    "name": "Donjon",
+    "lines": [3, 10]
+  },
+  {
+    "id": 37,
+    "x": 10,
+    "z": 160,
+    "isStation": 1,
+    "name": "Château",
+    "lines": [3, 8, 28]
+  },
+  {
+    "id": 38,
+    "x": 20,
+    "z": 10,
+    "isStation": 1,
+    "name": "Armire",
+    "lines": [3, 4],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 12
+  },
+  {
+    "id": 39,
+    "x": 20,
+    "z": -50,
+    "isStation": 1,
+    "name": "Pêche",
+    "lines": [3, 4]
+  },
+  {
+    "id": 40,
+    "x": 30,
+    "z": -50,
+    "isStation": 0
+  },
+  {
+    "id": 41,
+    "x": 70,
+    "z": -90,
+    "isStation": 1,
+    "name": "Porte Moutons",
+    "lines": [3, 9]
+  },
+  {
+    "id": 42,
+    "x": 70,
+    "z": -160,
+    "isStation": 1,
+    "name": "Cap",
+    "lines": [3]
+  },
+  {
+    "id": 43,
+    "x": -390,
+    "z": 70,
+    "isStation": 1,
+    "name": "Névés",
+    "lines": [4, 11]
+  },
+  {
+    "id": 44,
+    "x": -365,
+    "z": 95,
+    "isStation": 0
+  },
+  {
+    "id": 45,
+    "x": -300,
+    "z": 95,
+    "isStation": 1,
+    "name": "Cirque",
+    "lines": [4]
+  },
+  {
+    "id": 46,
+    "x": -225,
+    "z": 95,
+    "isStation": 0
+  },
+  {
+    "id": 47,
+    "x": -180,
+    "z": 50,
+    "isStation": 1,
+    "name": "Champs",
+    "lines": [4]
+  },
+  {
+    "id": 48,
+    "x": 20,
+    "z": -90,
+    "isStation": 0
+  },
+  {
+    "id": 49,
+    "x": 20,
+    "z": -130,
+    "isStation": 0
+  },
+  {
+    "id": 50,
+    "x": -5,
+    "z": -130,
+    "isStation": 1,
+    "name": "Usines",
+    "lines": [9, 27]
+  },
+  {
+    "id": 51,
+    "x": -110,
+    "z": -130,
+    "isStation": 1,
+    "name": "Terrain",
+    "lines": [4, 9],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 122
+  },
+  {
+    "id": 52,
+    "x": -110,
+    "z": -200,
+    "isStation": 0
+  },
+  {
+    "id": 53,
+    "x": -130,
+    "z": -220,
+    "isStation": 0
+  },
+  {
+    "id": 54,
+    "x": -130,
+    "z": -280,
+    "isStation": 1,
+    "name": "Renifleurs",
+    "lines": [4]
+  },
+  {
+    "id": 55,
+    "x": -130,
+    "z": -555,
+    "isStation": 0
+  },
+  {
+    "id": 56,
+    "x": -180,
+    "z": -555,
+    "isStation": 1,
+    "name": "Jungle",
+    "lines": [4]
+  },
+  {
+    "id": 57,
+    "x": -275,
+    "z": -555,
+    "isStation": 0
+  },
+  {
+    "id": 58,
+    "x": -275,
+    "z": -590,
+    "isStation": 1,
+    "name": "Canal",
+    "lines": [4]
+  },
+  {
+    "id": 59,
+    "x": -275,
+    "z": -625,
+    "isStation": 0
+  },
+  {
+    "id": 60,
+    "x": -375,
+    "z": -625,
+    "isStation": 0
+  },
+  {
+    "id": 61,
+    "x": -440,
+    "z": -690,
+    "isStation": 1,
+    "name": "Le Pertuix",
+    "lines": [4]
+  },
+  {
+    "id": 62,
+    "x": -515,
+    "z": -690,
+    "isStation": 0
+  },
+  {
+    "id": 63,
+    "x": -555,
+    "z": -730,
+    "isStation": 1,
+    "name": "Tir à l'Arc",
+    "lines": [4]
+  },
+  {
+    "id": 64,
+    "x": -590,
+    "z": -765,
+    "isStation": 0
+  },
+  {
+    "id": 65,
+    "x": -590,
+    "z": -885,
+    "isStation": 1,
+    "name": "Moulins",
+    "lines": [4, 5]
+  },
+  {
+    "id": 66,
+    "x": -700,
+    "z": -885,
+    "isStation": 0
+  },
+  {
+    "id": 67,
+    "x": -700,
+    "z": -970,
+    "isStation": 1,
+    "name": "Basilique",
+    "lines": [4]
+  },
+  {
+    "id": 68,
+    "x": -675,
+    "z": -995,
+    "isStation": 0
+  },
+  {
+    "id": 69,
+    "x": -675,
+    "z": -1120,
+    "isStation": 0
+  },
+  {
+    "id": 70,
+    "x": -580,
+    "z": -1120,
+    "isStation": 1,
+    "name": "Le Mas d'Herdix",
+    "lines": [4, 5, 7, 15, 17]
+  },
+  {
+    "id": 71,
+    "x": -490,
+    "z": -885,
+    "isStation": 1,
+    "name": "Écuries du Mas d'Herdix",
+    "lines": [5]
+  },
+  {
+    "id": 72,
+    "x": -590,
+    "z": -905,
+    "isStation": 0
+  },
+  {
+    "id": 73,
+    "x": -610,
+    "z": -925,
+    "isStation": 0
+  },
+  {
+    "id": 74,
+    "x": -610,
+    "z": -1040,
+    "isStation": 1,
+    "name": "Fleuve",
+    "lines": [5]
+  },
+  {
+    "id": 75,
+    "x": -610,
+    "z": -1090,
+    "isStation": 0
+  },
+  {
+    "id": 76,
+    "x": -580,
+    "z": -1140,
+    "isStation": 0
+  },
+  {
+    "id": 77,
+    "x": -560,
+    "z": -1160,
+    "isStation": 1,
+    "name": "Tour",
+    "lines": [5]
+  },
+  {
+    "id": 78,
+    "x": -560,
+    "z": -1240,
+    "isStation": 0
+  },
+  {
+    "id": 79,
+    "x": -625,
+    "z": -1305,
+    "isStation": 0
+  },
+  {
+    "id": 80,
+    "x": -625,
+    "z": -1370,
+    "isStation": 1,
+    "name": "Grand Canal",
+    "lines": [5]
+  },
+  {
+    "id": 81,
+    "x": 180,
+    "z": 80,
+    "isStation": 0
+  },
+  {
+    "id": 82,
+    "x": 180,
+    "z": 95,
+    "isStation": 0
+  },
+  {
+    "id": 83,
+    "x": 225,
+    "z": 140,
+    "isStation": 1,
+    "name": "Coteaux",
+    "lines": [6]
+  },
+  {
+    "id": 84,
+    "x": 390,
+    "z": 140,
+    "isStation": 0
+  },
+  {
+    "id": 85,
+    "x": 390,
+    "z": 405,
+    "isStation": 0
+  },
+  {
+    "id": 86,
+    "x": 280,
+    "z": 405,
+    "isStation": 0
+  },
+  {
+    "id": 87,
+    "x": 260,
+    "z": 400,
+    "isStation": 1,
+    "name": "Corbère - Coupole",
+    "lines": [10]
+  },
+  {
+    "id": 88,
+    "x": 280,
+    "z": 420,
+    "isStation": 0
+  },
+  {
+    "id": 89,
+    "x": 280,
+    "z": 460,
+    "isStation": 1,
+    "name": "Corbère - Grand Rue",
+    "lines": [6]
+  },
+  {
+    "id": 90,
+    "x": 280,
+    "z": 515,
+    "isStation": 1,
+    "name": "Corbère - Gare",
+    "lines": [6, 8, 10, 20, 22]
+  },
+  {
+    "id": 91,
+    "x": -810,
+    "z": -1075,
+    "isStation": 1,
+    "name": "Pla du Temple",
+    "lines": [7]
+  },
+  {
+    "id": 92,
+    "x": -645,
+    "z": -1075,
+    "isStation": 1,
+    "name": "Grand Huit",
+    "lines": [7]
+  },
+  {
+    "id": 93,
+    "x": -625,
+    "z": -1075,
+    "isStation": 0
+  },
+  {
+    "id": 94,
+    "x": -560,
+    "z": -1140,
+    "isStation": 0
+  },
+  {
+    "id": 95,
+    "x": -465,
+    "z": -1140,
+    "isStation": 0
+  },
+  {
+    "id": 96,
+    "x": -465,
+    "z": -1190,
+    "isStation": 1,
+    "name": "Jupe",
+    "lines": [7]
+  },
+  {
+    "id": 97,
+    "x": -465,
+    "z": -1235,
+    "isStation": 0
+  },
+  {
+    "id": 98,
+    "x": -395,
+    "z": -1235,
+    "isStation": 1,
+    "name": "Abeilles",
+    "lines": [7]
+  },
+  {
+    "id": 99,
+    "x": -370,
+    "z": -1235,
+    "isStation": 0
+  },
+  {
+    "id": 100,
+    "x": -370,
+    "z": -1580,
+    "isStation": 1,
+    "name": "Meadow Village",
+    "lines": [7]
+  },
+  {
+    "id": 101,
+    "x": -370,
+    "z": -1640,
+    "isStation": 0
+  },
+  {
+    "id": 102,
+    "x": -110,
+    "z": -1640,
+    "isStation": 1,
+    "name": "Stronghold",
+    "lines": [7, 16]
+  },
+  {
+    "id": 103,
+    "x": 220,
+    "z": -125,
+    "isStation": 1,
+    "name": "SylPhare - DàC",
+    "lines": [8, 28, 29]
+  },
+  {
+    "id": 104,
+    "x": 220,
+    "z": -30,
+    "isStation": 1,
+    "name": "Lamas",
+    "lines": [8]
+  },
+  {
+    "id": 105,
+    "x": 220,
+    "z": 5,
+    "isStation": 0
+  },
+  {
+    "id": 106,
+    "x": 140,
+    "z": 5,
+    "isStation": 0
+  },
+  {
+    "id": 107,
+    "x": 95,
+    "z": 85,
+    "isStation": 1,
+    "name": "Place du Piémont",
+    "lines": [8, 10]
+  },
+  {
+    "id": 108,
+    "x": 10,
+    "z": 85,
+    "isStation": 0
+  },
+  {
+    "id": 109,
+    "x": 10,
+    "z": 180,
+    "isStation": 0
+  },
+  {
+    "id": 110,
+    "x": 45,
+    "z": 215,
+    "isStation": 1,
+    "name": "Clôt de la vigne",
+    "lines": [8]
+  },
+  {
+    "id": 111,
+    "x": 45,
+    "z": 320,
+    "isStation": 1,
+    "name": "Parc de Bozouls",
+    "lines": [8]
+  },
+  {
+    "id": 112,
+    "x": 45,
+    "z": 375,
+    "isStation": 1,
+    "name": "Labyrinthe - Entrée",
+    "lines": [8]
+  },
+  {
+    "id": 113,
+    "x": -525,
+    "z": -125,
+    "isStation": 1,
+    "name": "Redstone Park",
+    "lines": [9, 25, 26]
+  },
+  {
+    "id": 114,
+    "x": -420,
+    "z": -125,
+    "isStation": 0
+  },
+  {
+    "id": 115,
+    "x": -420,
+    "z": -30,
+    "isStation": 0
+  },
+  {
+    "id": 116,
+    "x": -380,
+    "z": -30,
+    "isStation": 1,
+    "name": "Barrage",
+    "lines": [9]
+  },
+  {
+    "id": 117,
+    "x": -300,
+    "z": -30,
+    "isStation": 0
+  },
+  {
+    "id": 118,
+    "x": -300,
+    "z": -60,
+    "isStation": 0
+  },
+  {
+    "id": 119,
+    "x": -270,
+    "z": -60,
+    "isStation": 1,
+    "name": "Falaise",
+    "lines": [9]
+  },
+  {
+    "id": 120,
+    "x": -190,
+    "z": -60,
+    "isStation": 0
+  },
+  {
+    "id": 121,
+    "x": -190,
+    "z": -130,
+    "isStation": 0
+  },
+  {
+    "id": 122,
+    "x": -150,
+    "z": -130,
+    "isStation": 1,
+    "name": "Lac d'Io",
+    "lines": [9, 10],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 51
+  },
+  {
+    "id": 123,
+    "x": 120,
+    "z": -90,
+    "isStation": 0
+  },
+  {
+    "id": 124,
+    "x": 120,
+    "z": -50,
+    "isStation": 1,
+    "name": "Cocotier",
+    "lines": [9]
+  },
+  {
+    "id": 125,
+    "x": 120,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 126,
+    "x": 160,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 127,
+    "x": 230,
+    "z": 20,
+    "isStation": 1,
+    "name": "Écuries",
+    "lines": [9]
+  },
+  {
+    "id": 128,
+    "x": 315,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 129,
+    "x": 315,
+    "z": -20,
+    "isStation": 1,
+    "name": "Diana",
+    "lines": [9]
+  },
+  {
+    "id": 130,
+    "x": -180,
+    "z": -245,
+    "isStation": 1,
+    "name": "Échiquier",
+    "lines": [10]
+  },
+  {
+    "id": 131,
+    "x": -180,
+    "z": -160,
+    "isStation": 0
+  },
+  {
+    "id": 132,
+    "x": -150,
+    "z": -75,
+    "isStation": 0
+  },
+  {
+    "id": 133,
+    "x": -120,
+    "z": -75,
+    "isStation": 1,
+    "name": "Spawners",
+    "lines": [10, 14]
+  },
+  {
+    "id": 134,
+    "x": -40,
+    "z": -75,
+    "isStation": 0
+  },
+  {
+    "id": 135,
+    "x": -40,
+    "z": -60,
+    "isStation": 1,
+    "name": "Amphithéâtre",
+    "lines": [10]
+  },
+  {
+    "id": 136,
+    "x": -40,
+    "z": -5,
+    "isStation": 1,
+    "name": "Arcouzan",
+    "lines": [10, 12]
+  },
+  {
+    "id": 137,
+    "x": -40,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 138,
+    "x": 95,
+    "z": 125,
+    "isStation": 0
+  },
+  {
+    "id": 139,
+    "x": 75,
+    "z": 145,
+    "isStation": 0
+  },
+  {
+    "id": 140,
+    "x": 75,
+    "z": 180,
+    "isStation": 0
+  },
+  {
+    "id": 141,
+    "x": 165,
+    "z": 270,
+    "isStation": 0
+  },
+  {
+    "id": 142,
+    "x": 165,
+    "z": 320,
+    "isStation": 1,
+    "name": "Labyrinthe - Sortie",
+    "lines": [10]
+  },
+  {
+    "id": 143,
+    "x": 255,
+    "z": 320,
+    "isStation": 1,
+    "name": "Niaux",
+    "lines": [10]
+  },
+  {
+    "id": 144,
+    "x": 260,
+    "z": 320,
+    "isStation": 0
+  },
+  {
+    "id": 145,
+    "x": -380,
+    "z": 60,
+    "isStation": 0
+  },
+  {
+    "id": 146,
+    "x": -380,
+    "z": 40,
+    "isStation": 0
+  },
+  {
+    "id": 147,
+    "x": -400,
+    "z": 40,
+    "isStation": 1,
+    "name": "Observatoire",
+    "lines": [11]
+  },
+  {
+    "id": 148,
+    "x": -125,
+    "z": -5,
+    "isStation": 1,
+    "name": "Refuge Thiriet",
+    "lines": [12]
+  },
+  {
+    "id": 149,
+    "x": -830,
+    "z": -2085,
+    "isStation": 1,
+    "name": "Chenoux",
+    "lines": [13],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 161
+  },
+  {
+    "id": 150,
+    "x": -690,
+    "z": -2085,
+    "isStation": 1,
+    "name": "Chenoux 2000",
+    "lines": [13]
+  },
+  {
+    "id": 151,
+    "x": -120,
+    "z": -30,
+    "isStation": 0
+  },
+  {
+    "id": 152,
+    "x": -90,
+    "z": 0,
+    "isStation": 0
+  },
+  {
+    "id": 153,
+    "x": -70,
+    "z": 20,
+    "isStation": 1,
+    "name": "Nationale SNCA",
+    "lines": [14, 15, 20, 21, 24],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 10
+  },
+  {
+    "id": 154,
+    "x": 80,
+    "z": 20,
+    "isStation": 1,
+    "name": "Salle des Coffres",
+    "lines": [14, 27, 29]
+  },
+  {
+    "id": 155,
+    "x": -70,
+    "z": -1120,
+    "isStation": 0
+  },
+  {
+    "id": 156,
+    "x": -110,
+    "z": -1120,
+    "isStation": 0
+  },
+  {
+    "id": 157,
+    "x": -900,
+    "z": -1120,
+    "isStation": 0
+  },
+  {
+    "id": 158,
+    "x": -900,
+    "z": -1790,
+    "isStation": 0
+  },
+  {
+    "id": 159,
+    "x": -2675,
+    "z": -1790,
+    "isStation": 0
+  },
+  {
+    "id": 160,
+    "x": -2675,
+    "z": -3100,
+    "isStation": 1,
+    "name": "Hercules Village",
+    "lines": [17]
+  },
+  {
+    "id": 161,
+    "x": -900,
+    "z": -2040,
+    "isStation": 1,
+    "name": "Chenoux - Gare",
+    "lines": [18],
+    "isPedestrianLinked": 1,
+    "PedestrianLinksToNode": 149
+  },
+  {
+    "id": 162,
+    "x": -4155,
+    "z": -1790,
+    "isStation": 0
+  },
+  {
+    "id": 163,
+    "x": -4155,
+    "z": 130,
+    "isStation": 1,
+    "name": "Désert",
+    "lines": [19]
+  },
+  {
+    "id": 164,
+    "x": -4155,
+    "z": 685,
+    "isStation": 1,
+    "name": "Mesa",
+    "lines": [19]
+  },
+  {
+    "id": 165,
+    "x": -70,
+    "z": 140,
+    "isStation": 0
+  },
+  {
+    "id": 166,
+    "x": -70,
+    "z": 515,
+    "isStation": 0
+  },
+  {
+    "id": 167,
+    "x": -70,
+    "z": 1330,
+    "isStation": 0
+  },
+  {
+    "id": 168,
+    "x": -70,
+    "z": 2700,
+    "isStation": 1,
+    "name": "Océan Sud - Flyme Village",
+    "lines": [21]
+  },
+  {
+    "id": 169,
+    "x": -275,
+    "z": 1330,
+    "isStation": 1,
+    "name": "Diefda Town",
+    "lines": [23]
+  },
+  {
+    "id": 170,
+    "x": -460,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 171,
+    "x": -510,
+    "z": 20,
+    "isStation": 0
+  },
+  {
+    "id": 172,
+    "x": -525,
+    "z": 120,
+    "isStation": 1,
+    "name": "Choisillanc - Mer",
+    "lines": [1, 26]
+  },
+  {
+    "id": 173,
+    "x": -525,
+    "z": 20,
+    "isStation": 1,
+    "name": "Chapelle",
+    "lines": [26]
+  },
+  {
+    "id": 174,
+    "x": -510,
+    "z": -110,
+    "isStation": 0
+  },
+  {
+    "id": 175,
+    "x": 80,
+    "z": -130,
+    "isStation": 0
+  },
+  {
+    "id": 176,
+    "x": 250,
+    "z": -170,
+    "isStation": 0
+  },
+  {
+    "id": 177,
+    "x": 250,
+    "z": -260,
+    "isStation": 1,
+    "name": "L'infernal",
+    "lines": [8]
+  },
+  {
+    "id": 178,
+    "x": 630,
+    "z": 515,
+    "isStation": 0
+  },
+  {
+    "id": 179,
+    "x": -615,
+    "z": 30,
+    "isStation": 1,
+    "name": "Gavarnie",
+    "lines": [1]
+  },
+  {
+    "id": 180,
+    "x": -615,
+    "z": -90,
+    "isStation": 1,
+    "name": "Dunelet - Village",
+    "lines": [1, 9]
+  },
+  {
+    "id": 181,
+    "x": -615,
+    "z": -125,
+    "isStation": 0
+  },
+  {
+    "id": 182,
+    "x": -635,
+    "z": -70,
+    "isStation": 0
+  },
+  {
+    "id": 183,
+    "x": -690,
+    "z": -70,
+    "isStation": 0
+  },
+  {
+    "id": 184,
+    "x": -725,
+    "z": -35,
+    "isStation": 0
+  },
+  {
+    "id": 185,
+    "x": -755,
+    "z": -35,
+    "isStation": 0
+  },
+  {
+    "id": 186,
+    "x": -755,
+    "z": -5,
+    "isStation": 1,
+    "name": "Dunelet - Phare",
+    "lines": [9]
+  },
+  {
+    "id": 187,
+    "x": -170,
+    "z": 160,
+    "isStation": 0
+  },
+  {
+    "id": 188,
+    "x": -80,
+    "z": 160,
+    "isStation": 1,
+    "name": "Vignobles",
+    "lines": [28]
+  },
+  {
+    "id": 189,
+    "x": 10,
+    "z": 100,
+    "isStation": 0
+  },
+  {
+    "id": 190,
+    "x": 10,
+    "z": 80,
+    "isStation": 0
+  },
+  {
+    "id": 191,
+    "x": 195,
+    "z": -15,
+    "isStation": 1,
+    "name": "Port des Nautiles",
+    "lines": [28]
+  },
+  {
+    "id": 192,
+    "x": 195,
+    "z": -100,
+    "isStation": 0
+  },
+  {
+    "id": 193,
+    "x": 140,
+    "z": -125,
+    "isStation": 0
+  },
+  {
+    "id": 194,
+    "x": 805,
+    "z": -125,
+    "isStation": 0
+  },
+  {
+    "id": 195,
+    "x": 805,
+    "z": -45,
+    "isStation": 0
+  },
+  {
+    "id": 196,
+    "x": 70,
+    "z": 400,
+    "isStation": 0
+  },
+  {
+    "id": 197,
+    "x": 125,
+    "z": 400,
+    "isStation": 1,
+    "name": "Le Pavillon",
+    "lines": [8]
+  },
+  {
+    "id": 198,
+    "x": 160,
+    "z": 400,
+    "isStation": 0
+  },
+  {
+    "id": 199,
+    "x": 160,
+    "z": 505,
+    "isStation": 0
+  },
+  {
+    "id": 200,
+    "x": 270,
+    "z": 505,
+    "isStation": 0
   }
 ]
