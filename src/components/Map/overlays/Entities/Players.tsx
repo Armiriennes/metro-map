@@ -5,6 +5,7 @@ import 'leaflet-rotatedmarker';
 import type {Player} from "../../../../interfaces/Players.ts";
 import type {PlayersData} from "../../../../interfaces/PlayersData.ts";
 import { CoordsConverter } from '../../../../utils/Coords_Converter.ts';
+const baseUrl = import.meta.env.VITE_MAP_URL;
 
 export const Players: React.FC = () => {
     const [players, setPlayers] = useState<Player[]>([]);
@@ -12,7 +13,7 @@ export const Players: React.FC = () => {
     useEffect(() => {
         const fetchPlayers = async () => {
             try {
-                const res = await fetch('/api/players');
+                const res = await fetch(`${baseUrl}/api/players`);
                 const data: PlayersData = await res.json();
                 setPlayers(data.players.filter(p => p.world === 'minecraft_overworld'));
             } catch (err) {

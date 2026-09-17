@@ -11,12 +11,12 @@ import { HudCoords } from './overlays/HUD/HudCoords.tsx';
 import { Stations } from './overlays/Entities/Station.tsx';
 import { Lines } from './overlays/Map/Lines.tsx';
 import { MouseTracker } from './overlays/MouseTracker.tsx';
-import {Players} from "./overlays/Entities/Players.tsx";
-import {MapBorder} from "./overlays/Map/WorldBorder.tsx";
+import { Players } from "./overlays/Entities/Players.tsx";
+import { MapBorder } from "./overlays/Map/WorldBorder.tsx";
 
 export const Squaremap: React.FC<Props> = ({ tileSize = 128 }) => {
-    const mapUrl = import.meta.env.VITE_MAP_URL!;
-    const worldName = import.meta.env.VITE_WORLD_MAP_NAME!;
+    const mapUrl = import.meta.env.VITE_MAP_URL;
+    const worldName = import.meta.env.VITE_WORLD_MAP_NAME;
     const maxRealZoom = 3;
     const maxLeafletZoom = 10;
     const [coords, setCoords] = useState<Coords | null>(null);
