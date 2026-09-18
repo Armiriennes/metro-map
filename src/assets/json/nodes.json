@@ -47,7 +47,8 @@
     "z": 75,
     "isStation": 1,
     "name": "Bois de Buzet",
-    "lines": [1]
+    "lines": [1],
+    "isAccessible" : 1
   },
   {
     "id": 8,
@@ -129,7 +130,8 @@
     "z": 140,
     "isStation": 1,
     "name": "Apple Town - Gare",
-    "lines": [1, 20]
+    "lines": [1, 20],
+    "isAccessible" : 1
   },
   {
     "id": 19,
@@ -143,7 +145,8 @@
     "z": 170,
     "isStation": 1,
     "name": "Apple Town - Centre",
-    "lines": [1]
+    "lines": [1],
+    "isAccessible" : 1
   },
   {
     "id": 21,
@@ -157,7 +160,8 @@
     "z": 60,
     "isStation": 1,
     "name": "Équestria",
-    "lines": [1]
+    "lines": [1],
+    "isAccessible" : 1
   },
   {
     "id": 23,
@@ -171,7 +175,8 @@
     "z": -30,
     "isStation": 1,
     "name": "Cerisiers",
-    "lines": [1, 2, 29]
+    "lines": [1, 2, 29],
+    "isAccessible" : 1
   },
   {
     "id": 25,
@@ -259,7 +264,8 @@
     "z": 160,
     "isStation": 1,
     "name": "Donjon",
-    "lines": [3, 10]
+    "lines": [3, 10],
+    "isAccessible" : 1
   },
   {
     "id": 37,
@@ -503,7 +509,8 @@
     "z": -1120,
     "isStation": 1,
     "name": "Le Mas d'Herdix",
-    "lines": [4, 5, 7, 15, 17]
+    "lines": [4, 5, 7, 15, 17],
+    "isAccessible" : 1
   },
   {
     "id": 71,
@@ -695,7 +702,8 @@
     "z": -1235,
     "isStation": 1,
     "name": "Abeilles",
-    "lines": [7]
+    "lines": [7],
+    "isAccessible" : 1
   },
   {
     "id": 99,
@@ -787,7 +795,8 @@
     "z": 320,
     "isStation": 1,
     "name": "Parc de Bozouls",
-    "lines": [8]
+    "lines": [8],
+    "isAccessible" : 1
   },
   {
     "id": 112,
@@ -795,7 +804,8 @@
     "z": 375,
     "isStation": 1,
     "name": "Labyrinthe - Entrée",
-    "lines": [8]
+    "lines": [8],
+    "isAccessible" : 1
   },
   {
     "id": 113,
@@ -803,7 +813,8 @@
     "z": -125,
     "isStation": 1,
     "name": "Redstone Park",
-    "lines": [9, 25, 26]
+    "lines": [9, 25, 26],
+    "isAccessible" : 1
   },
   {
     "id": 114,
@@ -864,6 +875,7 @@
     "isStation": 1,
     "name": "Lac d'Io",
     "lines": [9, 10],
+    "isAccessible" : 1,
     "isPedestrianLinked": 1,
     "PedestrianLinksToNode": 51
   },
@@ -899,7 +911,8 @@
     "z": 20,
     "isStation": 1,
     "name": "Écuries",
-    "lines": [9]
+    "lines": [9],
+    "isAccessible" : 1
   },
   {
     "id": 128,
@@ -941,7 +954,8 @@
     "z": -75,
     "isStation": 1,
     "name": "Spawners",
-    "lines": [10, 14]
+    "lines": [10, 14],
+    "isAccessible" : 1
   },
   {
     "id": 134,
@@ -955,7 +969,8 @@
     "z": -60,
     "isStation": 1,
     "name": "Amphithéâtre",
-    "lines": [10]
+    "lines": [10],
+    "isAccessible" : 1
   },
   {
     "id": 136,
@@ -963,7 +978,8 @@
     "z": -5,
     "isStation": 1,
     "name": "Arcouzan",
-    "lines": [10, 12]
+    "lines": [10, 12],
+    "isAccessible" : 1
   },
   {
     "id": 137,
@@ -1001,7 +1017,8 @@
     "z": 320,
     "isStation": 1,
     "name": "Labyrinthe - Sortie",
-    "lines": [10]
+    "lines": [10],
+    "isAccessible" : 1
   },
   {
     "id": 143,
@@ -1043,7 +1060,8 @@
     "z": -5,
     "isStation": 1,
     "name": "Refuge Thiriet",
-    "lines": [12]
+    "lines": [12],
+    "isAccessible" : 1
   },
   {
     "id": 149,
@@ -1052,6 +1070,7 @@
     "isStation": 1,
     "name": "Chenoux",
     "lines": [13],
+    "isAccessible" : 1,
     "isPedestrianLinked": 1,
     "PedestrianLinksToNode": 161
   },
@@ -1061,7 +1080,8 @@
     "z": -2085,
     "isStation": 1,
     "name": "Chenoux 2000",
-    "lines": [13]
+    "lines": [13],
+    "isAccessible" : 1
   },
   {
     "id": 151,
@@ -1082,6 +1102,7 @@
     "isStation": 1,
     "name": "Nationale SNCA",
     "lines": [14, 15, 20, 21, 24],
+    "isAccessible" : 1,
     "isPedestrianLinked": 1,
     "PedestrianLinksToNode": 10
   },
@@ -1091,7 +1112,8 @@
     "z": 20,
     "isStation": 1,
     "name": "Salle des Coffres",
-    "lines": [14, 27, 29]
+    "lines": [14, 27, 29],
+    "isAccessible" : 1
   },
   {
     "id": 155,
@@ -1138,6 +1160,7 @@
     "isStation": 1,
     "name": "Chenoux - Gare",
     "lines": [18],
+    "isAccessible" : 1,
     "isPedestrianLinked": 1,
     "PedestrianLinksToNode": 149
   },
@@ -1153,7 +1176,8 @@
     "z": 130,
     "isStation": 1,
     "name": "Désert",
-    "lines": [19]
+    "lines": [19],
+    "isAccessible" : 1
   },
   {
     "id": 164,
@@ -1161,7 +1185,8 @@
     "z": 685,
     "isStation": 1,
     "name": "Mesa",
-    "lines": [19]
+    "lines": [19],
+    "isAccessible" : 1
   },
   {
     "id": 165,
@@ -1215,7 +1240,8 @@
     "z": 120,
     "isStation": 1,
     "name": "Choisillanc - Mer",
-    "lines": [1, 26]
+    "lines": [1, 26],
+    "isAccessible" : 1
   },
   {
     "id": 173,
@@ -1223,7 +1249,8 @@
     "z": 20,
     "isStation": 1,
     "name": "Chapelle",
-    "lines": [26]
+    "lines": [26],
+    "isAccessible" : 1
   },
   {
     "id": 174,
@@ -1249,7 +1276,8 @@
     "z": -260,
     "isStation": 1,
     "name": "L'infernal",
-    "lines": [8]
+    "lines": [8],
+    "isAccessible" : 1
   },
   {
     "id": 178,
@@ -1409,7 +1437,8 @@
     "z": -220,
     "isStation": 1,
     "name": "Cap",
-    "lines": [3]
+    "lines": [3],
+    "isAccessible" : 1
   },
   {
     "id": 202,
