@@ -17,7 +17,13 @@ const formatLineName = (line: { type: string; name: string }) => {
         return num.replace(/\s*bis$/i, 'b');
     }
     if (line.type === 'RER') {
-        return line.name.replace(/^RER\s*/i, '');
+        return line.name.replace(/^RER\s*/i, '').trim();
+    }
+    if (line.type === 'Funiculaire') {
+        return line.name.replace(/^F\s*/i, '').trim();
+    }
+    if (line.type === 'Telecabine') {
+        return line.name.replace(/^C\s*/i, '').trim();
     }
     return line.name;
 };
@@ -55,6 +61,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
                         const isMetro = line.type === 'Metro';
                         const isRER = line.type === 'RER';
                         const isLGV = line.type === 'LGV' || line.type === 'TGV';
+                        const isFuniculaire = line.type === 'Funiculaire';
+                        const isTelecabine = line.type === 'Telecabine';
 
                         return (
                             <div key={line.id} className="line-row">
@@ -86,12 +94,26 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
                                     <div className="lgv-badge-container">
                                         <div className="lgv-icon-box">TGV</div>
                                         <div className="lgv-diamond-badge">
+                                            <span>{formatLineName(line)}</span>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {(isFuniculaire || isTelecabine) && (
+                                    <div className="cable-badge-container">
+                                        <div className="cable-icon-box">
+                                            {isFuniculaire ? '🚡' : '🚠'}
+                                        </div>
+                                        <div
+                                            className="cable-line-pill"
+                                            style={{ backgroundColor: `#${line.hex}` }}
+                                        >
                                             {formatLineName(line)}
                                         </div>
                                     </div>
                                 )}
 
-                                {!isMetro && !isRER && !isLGV && (
+                                {!isMetro && !isRER && !isLGV && !isFuniculaire && !isTelecabine && (
                                     <div
                                         className="line-badge"
                                         style={{ backgroundColor: `#${line.hex}` }}
