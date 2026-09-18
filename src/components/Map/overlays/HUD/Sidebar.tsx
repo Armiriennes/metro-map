@@ -22,7 +22,7 @@ const formatLineName = (line: { type: string; name: string }) => {
     return line.name;
 };
 
-const getLineTermini = (line: any) => {
+const getLineTerminus = (line: any) => {
     if (!line || !line.nodes || line.nodes.length === 0) {
         return { start: '', end: '' };
     }
@@ -57,6 +57,83 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
         ? nodesData.find(node => node.id === station.PedestrianLinksToNode)
         : null;
 
+    // Récupération des lignes de la station reliée à pied
+    const pedestrianLines = pedestrianNode && pedestrianNode.lines
+        ? pedestrianNode.lines
+            .map((lineId: number) => linesData.find(line => line.id === lineId))
+            .filter(Boolean)
+        : [];
+
+    // Helper pour générer les badges de ligne
+    const renderLineBadge = (line: any) => {
+        const isMetro = line.type === 'Metro';
+        const isRER = line.type === 'RER';
+        const isLGV = line.type === 'LGV' || line.type === 'TGV';
+        const isFuniculaire = line.type === 'Funiculaire';
+        const isTelecabine = line.type === 'Telecabine';
+
+        return (
+            <div className="line-badge-wrapper">
+                {isMetro && (
+                    <div className="metro-badge-container">
+                        <div className="metro-icon-m">M</div>
+                        <div
+                            className="metro-line-pill"
+                            style={{ backgroundColor: `#${line.hex}` }}
+                        >
+                            {formatLineName(line)}
+                        </div>
+                    </div>
+                )}
+
+                {isRER && (
+                    <div className="rer-badge-container">
+                        <div className="rer-icon-box">RER</div>
+                        <div
+                            className="rer-line-pill"
+                            style={{ backgroundColor: `#${line.hex}` }}
+                        >
+                            {formatLineName(line)}
+                        </div>
+                    </div>
+                )}
+
+                {isLGV && (
+                    <div className="lgv-badge-container">
+                        <div className="lgv-icon-box">TGV</div>
+                        <div className="lgv-diamond-badge">
+                            <span>{formatLineName(line)}</span>
+                        </div>
+                    </div>
+                )}
+
+                {(isFuniculaire || isTelecabine) && (
+                    <div className="cable-badge-container">
+                        <div className="cable-icon-box">
+                            {isFuniculaire ? '🚡' : '🚠'}
+                        </div>
+                        <div
+                            className="cable-line-pill"
+                            style={{ backgroundColor: `#${line.hex}` }}
+                        >
+                            {formatLineName(line)}
+                        </div>
+                    </div>
+                )}
+
+                {!isMetro && !isRER && !isLGV && !isFuniculaire && !isTelecabine && (
+                    <div
+                        className="line-badge"
+                        style={{ backgroundColor: `#${line.hex}` }}
+                    >
+                        <span className="line-type">{line.type}</span>
+                        <span className="line-name">{formatLineName(line)}</span>
+                    </div>
+                )}
+            </div>
+        );
+    };
+
     return (
         <aside className="sidebar-panel">
             <button className="sidebar-close-btn" onClick={onClose}>✕</button>
@@ -73,82 +150,20 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
             <hr className="sidebar-divider" />
 
             <div className="sidebar-section">
+                <h3>Lignes en correspondance</h3>
                 <div className="lines-list">
                     {connectedLines.map((line: any) => {
-                        const isMetro = line.type === 'Metro';
-                        const isRER = line.type === 'RER';
-                        const isLGV = line.type === 'LGV' || line.type === 'TGV';
-                        const isFuniculaire = line.type === 'Funiculaire';
-                        const isTelecabine = line.type === 'Telecabine';
-
-                        const { start, end } = getLineTermini(line);
+                        const { start, end } = getLineTerminus(line);
                         const hasTermini = start && end;
 
                         return (
                             <div key={line.id} className="line-row">
-                                <div className="line-badge-wrapper">
-                                    {isMetro && (
-                                        <div className="metro-badge-container">
-                                            <div className="metro-icon-m">M</div>
-                                            <div
-                                                className="metro-line-pill"
-                                                style={{ backgroundColor: `#${line.hex}` }}
-                                            >
-                                                {formatLineName(line)}
-                                            </div>
-                                        </div>
-                                    )}
-
-                                    {isRER && (
-                                        <div className="rer-badge-container">
-                                            <div className="rer-icon-box">RER</div>
-                                            <div
-                                                className="rer-line-pill"
-                                                style={{ backgroundColor: `#${line.hex}` }}
-                                            >
-                                                {formatLineName(line)}
-                                            </div>
-                                        </div>
-                                    )}
-
-                                    {isLGV && (
-                                        <div className="lgv-badge-container">
-                                            <div className="lgv-icon-box">TGV</div>
-                                            <div className="lgv-diamond-badge">
-                                                <span>{formatLineName(line)}</span>
-                                            </div>
-                                        </div>
-                                    )}
-
-                                    {(isFuniculaire || isTelecabine) && (
-                                        <div className="cable-badge-container">
-                                            <div className="cable-icon-box">
-                                                {isFuniculaire ? '🚡' : '🚠'}
-                                            </div>
-                                            <div
-                                                className="cable-line-pill"
-                                                style={{ backgroundColor: `#${line.hex}` }}
-                                            >
-                                                {formatLineName(line)}
-                                            </div>
-                                        </div>
-                                    )}
-
-                                    {!isMetro && !isRER && !isLGV && !isFuniculaire && !isTelecabine && (
-                                        <div
-                                            className="line-badge"
-                                            style={{ backgroundColor: `#${line.hex}` }}
-                                        >
-                                            <span className="line-type">{line.type}</span>
-                                            <span className="line-name">{formatLineName(line)}</span>
-                                        </div>
-                                    )}
-                                </div>
+                                {renderLineBadge(line)}
 
                                 {hasTermini && (
                                     <div className="line-termini">
                                         <span className="termini-separator">|</span>
-                                        <span className="termini-text">{start} ⇔ {end}</span>
+                                        <span className="termini-text">{start} <b>⇔</b> {end}</span>
                                     </div>
                                 )}
                             </div>
@@ -159,9 +174,39 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
 
             {pedestrianNode && (
                 <div className="sidebar-section pedestrian-section">
-                    <h3>🚶 Correspondance piétonne</h3>
-                    <p>Lien direct vers la station :</p>
-                    <strong>{pedestrianNode.name}</strong>
+                    <div className="pedestrian-header">
+                        <span className="pedestrian-icon">🚶</span>
+                        <div>
+                            <span className="pedestrian-subtitle">CORRESPONDANCE PIÉTONNE</span>
+                            <h3 className="pedestrian-station-name">{pedestrianNode.name}</h3>
+                        </div>
+                    </div>
+
+                    {pedestrianLines.length > 0 && (
+                        <div className="pedestrian-lines-container">
+                            <span className="pedestrian-lines-label">Lignes accessibles :</span>
+                            <div className="lines-list">
+                                {pedestrianLines.map((line: any) => {
+                                    const { start, end } = getLineTerminus(line);
+                                    const hasTermini = start && end;
+
+                                    return (
+                                        <div key={line.id} className="line-row">
+                                            {renderLineBadge(line)}
+                                            <span className="pedestrian-line-full-name">{line.name}</span>
+
+                                            {hasTermini && (
+                                                <div className="line-termini">
+                                                    <span className="termini-separator">|</span>
+                                                    <span className="termini-text">{start} <b>⇔</b> {end}</span>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
                 </div>
             )}
         </aside>
