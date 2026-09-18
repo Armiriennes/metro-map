@@ -115,6 +115,34 @@
 .line-row {
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.line-badge-wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.line-termini {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+.termini-separator {
+    color: #ccc;
+    font-weight: 300;
+}
+
+.termini-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* --- STYLE MÉTRO --- */
