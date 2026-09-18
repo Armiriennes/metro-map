@@ -146,7 +146,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
 
                 <div className="sidebar-header">
                     <span className="sidebar-subtitle">Station de Transport</span>
-                    <h2 className="sidebar-title">{station.name}</h2>
+                    <h2 className="sidebar-title">
+                        {station.name} {station.isAccessible === 1 && <span className="handicap-icon" title="Station accessible PMR">♿</span>}
+                    </h2>
+
                     <div className="sidebar-coords">
                         <span>X: {station.x}</span>
                         <span>Z: {station.z}</span>
