@@ -13,6 +13,10 @@
     font-style: normal;
 }
 
+/**************************
+ * Gesition de la sidebar *
+ **************************/
+
 .sidebar-panel {
     position: absolute;
     top: 80px;
@@ -72,6 +76,10 @@
     color: #444;
 }
 
+/*********************
+ * Gestion des Lines *
+ *********************/
+
 .lines-list {
     display: flex;
     flex-direction: column;
@@ -95,15 +103,6 @@
     padding: 2px 6px;
     border-radius: 4px;
     text-transform: uppercase;
-}
-
-.pedestrian-section {
-    margin-top: 15px;
-    padding: 12px;
-    background: #f8f9fa;
-    border-left: 4px solid #007bff;
-    border-radius: 4px;
-    font-size: 13px;
 }
 
 .lines-list {
@@ -222,9 +221,95 @@
     margin-left: 4px;
 }
 
-/****************
- * Style lignes *
- ****************/
+/**********************************
+ * Gestion des images de stations *
+ **********************************/
+
+.sidebar-image-container {
+    width: 100%;
+    height: 280px;
+    margin: 12px 0 16px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.sidebar-image-container.clickable {
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar-image-container.clickable:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+}
+
+.sidebar-station-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- MODAL full screen --- */
+.image-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal-content {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    background-color: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-modal-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.image-modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.image-modal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/********************
+ * Style des lignes *
+ ********************/
 
 /* --- STYLE MÉTRO --- */
 .metro-badge-container {
@@ -354,7 +439,6 @@
     line-height: 1;
 }
 
-/* --- STYLE FUNICULAIRE ET TÉLÉCABINE --- */
 .cable-badge-container {
     display: flex;
     align-items: center;
@@ -376,7 +460,6 @@
     height: 22px;
 }
 
-/* Pastille pastel pour la ligne */
 .cable-line-pill {
     width: 26px;
     height: 26px;

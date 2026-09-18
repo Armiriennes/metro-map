@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import linesData from '../../../../assets/json/lines.json';
 import nodesData from '../../../../assets/json/nodes.json';
+import defaultImg from '../../../../assets/img/default.png';
 import './Sidebar.css';
 
 interface SidebarProps {
@@ -47,6 +48,8 @@ const getLineTerminus = (line: any) => {
 };
 
 export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const connectedLines = station.lines
         ? station.lines
             .map((lineId: number) => linesData.find(line => line.id === lineId))
@@ -57,14 +60,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
         ? nodesData.find(node => node.id === station.PedestrianLinksToNode)
         : null;
 
-    // Récupération des lignes de la station reliée à pied
     const pedestrianLines = pedestrianNode && pedestrianNode.lines
         ? pedestrianNode.lines
             .map((lineId: number) => linesData.find(line => line.id === lineId))
             .filter(Boolean)
         : [];
 
-    // Helper pour générer les badges de ligne
+    const getStationImageUrl = (nodeId: number) => {
+        return new URL(`../../../../assets/img/${nodeId}.png`, import.meta.url).href;
+    };
+
     const renderLineBadge = (line: any) => {
         const isMetro = line.type === 'Metro';
         const isRER = line.type === 'RER';
@@ -135,78 +140,109 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
     };
 
     return (
-        <aside className="sidebar-panel">
-            <button className="sidebar-close-btn" onClick={onClose}>✕</button>
+        <>
+            <aside className="sidebar-panel">
+                <button className="sidebar-close-btn" onClick={onClose}>✕</button>
 
-            <div className="sidebar-header">
-                <span className="sidebar-subtitle">Station de Transport</span>
-                <h2 className="sidebar-title">{station.name}</h2>
-                <div className="sidebar-coords">
-                    <span>X: {station.x}</span>
-                    <span>Z: {station.z}</span>
-                </div>
-            </div>
-
-            <hr className="sidebar-divider" />
-
-            <div className="sidebar-section">
-                <h3>Lignes en correspondance</h3>
-                <div className="lines-list">
-                    {connectedLines.map((line: any) => {
-                        const { start, end } = getLineTerminus(line);
-                        const hasTermini = start && end;
-
-                        return (
-                            <div key={line.id} className="line-row">
-                                {renderLineBadge(line)}
-
-                                {hasTermini && (
-                                    <div className="line-termini">
-                                        <span className="termini-separator">|</span>
-                                        <span className="termini-text">{start} <b>⇔</b> {end}</span>
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-
-            {pedestrianNode && (
-                <div className="sidebar-section pedestrian-section">
-                    <div className="pedestrian-header">
-                        <span className="pedestrian-icon">🚶</span>
-                        <div>
-                            <span className="pedestrian-subtitle">CORRESPONDANCE PIÉTONNE</span>
-                            <h3 className="pedestrian-station-name">{pedestrianNode.name}</h3>
-                        </div>
+                <div className="sidebar-header">
+                    <span className="sidebar-subtitle">Station de Transport</span>
+                    <h2 className="sidebar-title">{station.name}</h2>
+                    <div className="sidebar-coords">
+                        <span>X: {station.x}</span>
+                        <span>Z: {station.z}</span>
                     </div>
+                </div>
 
-                    {pedestrianLines.length > 0 && (
-                        <div className="pedestrian-lines-container">
-                            <span className="pedestrian-lines-label">Lignes accessibles :</span>
-                            <div className="lines-list">
-                                {pedestrianLines.map((line: any) => {
-                                    const { start, end } = getLineTerminus(line);
-                                    const hasTermini = start && end;
+                <div
+                    className="sidebar-image-container clickable"
+                    onClick={() => setIsModalOpen(true)}
+                    title="Cliquer pour agrandir"
+                >
+                    <img
+                        src={getStationImageUrl(station.id)}
+                        alt={station.name}
+                        className="sidebar-station-img"
+                        onError={(e) => {
+                            (e.target as HTMLImageElement).src = defaultImg;
+                        }}
+                    />
+                </div>
 
-                                    return (
-                                        <div key={line.id} className="line-row">
-                                            {renderLineBadge(line)}
-                                            {hasTermini && (
-                                                <div className="line-termini">
-                                                    <span className="termini-separator">|</span>
-                                                    <span className="termini-text">{start} <b>⇔</b> {end}</span>
-                                                </div>
-                                            )}
+                <div className="sidebar-section">
+                    <h3>Lignes en correspondance</h3>
+                    <div className="lines-list">
+                        {connectedLines.map((line: any) => {
+                            const { start, end } = getLineTerminus(line);
+                            const hasTermini = start && end;
+
+                            return (
+                                <div key={line.id} className="line-row">
+                                    {renderLineBadge(line)}
+
+                                    {hasTermini && (
+                                        <div className="line-termini">
+                                            <span className="termini-separator">|</span>
+                                            <span className="termini-text">{start} <b>⇔</b> {end}</span>
                                         </div>
-                                    );
-                                })}
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                {pedestrianNode && (
+                    <div className="sidebar-section pedestrian-section">
+                        <div className="pedestrian-header">
+                            <span className="pedestrian-icon">🚶</span>
+                            <div>
+                                <span className="pedestrian-subtitle">CORRESPONDANCE PIÉTONNE</span>
+                                <h3 className="pedestrian-station-name">{pedestrianNode.name}</h3>
                             </div>
                         </div>
-                    )}
+
+                        {pedestrianLines.length > 0 && (
+                            <div className="pedestrian-lines-container">
+                                <span className="pedestrian-lines-label">Lignes accessibles :</span>
+                                <div className="lines-list">
+                                    {pedestrianLines.map((line: any) => {
+                                        const { start, end } = getLineTerminus(line);
+                                        const hasTermini = start && end;
+
+                                        return (
+                                            <div key={line.id} className="line-row">
+                                                {renderLineBadge(line)}
+                                                {hasTermini && (
+                                                    <div className="line-termini">
+                                                        <span className="termini-separator">|</span>
+                                                        <span className="termini-text">{start} <b>⇔</b> {end}</span>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                )}
+            </aside>
+
+            {isModalOpen && (
+                <div className="image-modal-backdrop" onClick={() => setIsModalOpen(false)}>
+                    <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="image-modal-close-btn" onClick={() => setIsModalOpen(false)}>✕</button>
+                        <img
+                            src={getStationImageUrl(station.id)}
+                            alt={station.name}
+                            className="image-modal-img"
+                            onError={(e) => {
+                                (e.target as HTMLImageElement).src = defaultImg;
+                            }}
+                        />
+                    </div>
                 </div>
             )}
-        </aside>
+        </>
     );
 };

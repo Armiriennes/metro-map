@@ -306,7 +306,7 @@
     "x": 70,
     "z": -160,
     "isStation": 1,
-    "name": "Cap",
+    "name": "Prés",
     "lines": [3]
   },
   {
@@ -1402,5 +1402,29 @@
     "x": 270,
     "z": 505,
     "isStation": 0
+  },
+  {
+    "id": 201,
+    "x": 70,
+    "z": -220,
+    "isStation": 1,
+    "name": "Cap",
+    "lines": [3]
+  },
+  {
+    "id": 202,
+    "x": 160,
+    "z": 120,
+    "isStation": 1,
+    "name": "Cascade",
+    "lines": [6]
+  },
+  {
+    "id": 203,
+    "x": 280,
+    "z": 660,
+    "isStation": 1,
+    "name": "Pradelles",
+    "lines": [6]
   }
 ]
