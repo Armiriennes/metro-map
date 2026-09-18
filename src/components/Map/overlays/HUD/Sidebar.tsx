@@ -193,8 +193,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ station, onClose }) => {
                                     return (
                                         <div key={line.id} className="line-row">
                                             {renderLineBadge(line)}
-                                            <span className="pedestrian-line-full-name">{line.name}</span>
-
                                             {hasTermini && (
                                                 <div className="line-termini">
                                                     <span className="termini-separator">|</span>

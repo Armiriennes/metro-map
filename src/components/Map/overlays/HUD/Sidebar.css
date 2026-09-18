@@ -215,6 +215,13 @@
     color: #374151;
 }
 
+.pedestrian-line-full-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-left: 4px;
+}
+
 /****************
  * Style lignes *
  ****************/
