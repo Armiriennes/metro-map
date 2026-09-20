@@ -196,7 +196,7 @@
     "z": -220,
     "isStation": 1,
     "name": "Nelee - Plage",
-    "lines": [1]
+    "lines": [1,28]
   },
   {
     "id": 28,
@@ -474,8 +474,8 @@
     "x": -590,
     "z": -885,
     "isStation": 1,
-    "name": "Moulins",
-    "lines": [4, 5]
+    "name": "Moulins a vent",
+    "lines": [4, 5, 30]
   },
   {
     "id": 66,
@@ -509,7 +509,7 @@
     "z": -1120,
     "isStation": 1,
     "name": "Le Mas d'Herdix",
-    "lines": [4, 5, 7, 15, 17],
+    "lines": [4, 5, 7, 15, 17,30],
     "isAccessible" : 1
   },
   {
@@ -1455,5 +1455,80 @@
     "isStation": 1,
     "name": "Pradelles",
     "lines": [6]
+  },
+  {
+    "id": 204,
+    "x": 235,
+    "z": -140,
+    "isStation": 0
+  },
+  {
+    "id": 205,
+    "x": 300,
+    "z": -140,
+    "isStation": 1,
+    "name": "Cap de la Chevre",
+    "lines" : [30]
+  },
+  {
+    "id": 206,
+    "x": 400,
+    "z": -240,
+    "isStation": 0
+  },
+  {
+    "id": 207,
+    "x": 600,
+    "z": -240,
+    "isStation": 1,
+    "name": "Arizona",
+    "lines" : [31],
+    "isAccessible" : 1
+  },
+  {
+    "id": 208,
+    "x": 980,
+    "z": -240,
+    "isStation": 0
+  },
+  {
+    "id": 209,
+    "x": 600,
+    "z": -125,
+    "isStation": 0
+  },
+  {
+    "id": 210,
+    "x": -555,
+    "z": -1095,
+    "isStation": 0
+  },
+  {
+    "id": 211,
+    "x": -555,
+    "z": -1050,
+    "isStation": 1,
+    "name": "Embarcadere",
+    "lines" : [30]
+  },
+  {
+    "id": 212,
+    "x": -570,
+    "z": -1035,
+    "isStation": 0
+  },
+  {
+    "id": 213,
+    "x": -570,
+    "z": -945,
+    "isStation": 1,
+    "name": "Moulin a eau",
+    "lines" : [30]
+  },
+  {
+    "id": 214,
+    "x": -570,
+    "z": -905,
+    "isStation": 0
   }
 ]
