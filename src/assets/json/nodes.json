@@ -1657,7 +1657,7 @@
     "z": -270,
     "isStation": 0,
     "name": "",
-    "lines" : [30]
+    "lines" : [10, 30]
   },
   {
     "id": 231,
@@ -1681,7 +1681,7 @@
     "z": 50,
     "isStation": 0,
     "name": "",
-    "lines" : [30,4]
+    "lines" : [4, 30]
   },
   {
     "id": 234,
@@ -1698,5 +1698,12 @@
     "isStation": 1,
     "name": "Corbère - Bellecôte",
     "lines" : [6]
+  },
+  {
+    "id": 236,
+    "x": -180,
+    "z": 25,
+    "isStation": 0,
+    "lines" : [30]
   }
 ]
